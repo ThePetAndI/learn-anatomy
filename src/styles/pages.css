@@ -1,0 +1,276 @@
+/* Итоги урока и профиль. */
+
+.page-head { padding: 32px 0 20px; }
+.page-title {
+  margin: 4px 0 0;
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.page-subtitle {
+  margin: 32px 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ——— итоги ——— */
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: calc(40px + var(--sat)) var(--gutter) calc(24px + var(--sab));
+}
+.results__title {
+  margin: 6px 0 10px;
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.12;
+}
+.results__score {
+  font-size: 20px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.results__missed { margin-top: 28px; }
+.results__subtitle { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+.results__note { margin: 6px 0 0; color: var(--ink-2); }
+.results__actions {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 32px;
+}
+
+.term-list { margin: 14px 0 0; padding: 0; list-style: none; }
+.term-list__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--hairline);
+}
+.term-list__item:last-child { border-bottom: 1px solid var(--hairline); }
+.term-list__en { font-family: var(--serif); font-size: 18px; font-weight: 600; }
+.term-list__ru { grid-column: 1; color: var(--ink-2); }
+.term-list__item .kind { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+
+/* ——— профиль ——— */
+.profile { padding: 0 var(--gutter) 40px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--hairline);
+}
+.stat {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.stat:nth-child(odd) { padding-right: 12px; border-right: 1px solid var(--hairline); }
+.stat:nth-child(even) { padding-left: 16px; }
+.stat__value {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+.stat__label { font-size: 13px; color: var(--ink-3); }
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 56px;
+  cursor: pointer;
+}
+.switch__text { display: grid; flex: 1 1 auto; }
+.switch__label { font-weight: 500; }
+.switch__hint { font-size: 13px; color: var(--ink-3); }
+.switch__input {
+  appearance: none;
+  position: relative;
+  width: 46px;
+  height: 28px;
+  flex: none;
+  border-radius: 14px;
+  background: var(--ink-4);
+  transition: background var(--t-fast);
+  cursor: pointer;
+}
+.switch__input::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface);
+  transition: transform var(--t-fast) var(--ease-out);
+}
+.switch__input:checked { background: var(--ink); }
+.switch__input:checked::after { transform: translateX(18px); }
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  margin: 0 0 32px;
+}
+.facts dt { color: var(--ink-3); }
+.facts dd { margin: 0; }
+
+/* ——— окно «Что не так?» ——— */
+.modal__card:has(.rsheet) { max-height: calc(100dvh - 32px); overflow-y: auto; }
+.rsheet__intro { margin: 0 0 4px; font-size: 14px; color: var(--ink-2); }
+.rsheet__label {
+  margin: 16px 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  min-height: 40px;
+  padding: 8px 14px;
+  border-radius: var(--r-md);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  background: var(--paper);
+  font-size: 14px;
+  line-height: 1.3;
+}
+.chip--target { display: grid; text-align: left; }
+.chip__main:lang(en) { font-family: var(--serif); font-weight: 600; }
+.chip__sub { font-size: 13px; color: var(--ink-3); }
+.chip[aria-pressed='true'] { box-shadow: inset 0 0 0 2px var(--ink); background: var(--surface-2); }
+.rsheet__note {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: var(--r-md);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  background: var(--paper);
+  font: inherit;
+  resize: vertical;
+}
+.rsheet__note:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.rsheet__actions { display: grid; gap: 10px; margin-top: 20px; }
+
+/* ——— повторение ——— */
+.review { padding: 0 var(--gutter) 40px; }
+.review__due { display: grid; gap: 16px; margin-bottom: 8px; }
+.review__count { font-size: 18px; color: var(--ink-2); }
+.review__num {
+  display: block;
+  font-family: var(--serif);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.review__note { margin: 0; color: var(--ink-2); }
+.review__facts { margin-top: 24px; }
+
+/* ——— словарь ——— */
+.dict { padding: 0 var(--gutter) 40px; }
+.dict__search {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 calc(-1 * var(--gutter)) 8px;
+  padding: 8px var(--gutter);
+  background: var(--paper);
+  color: var(--ink-3);
+}
+.dict__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: 17px;
+  color: var(--ink);
+}
+.dict__input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.dict__group {
+  margin: 24px 0 4px;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.dict__empty { color: var(--ink-2); }
+.dict-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.dict-row.is-pressed { background: var(--surface-2); }
+.dict-row__text { display: grid; flex: 1 1 auto; min-width: 0; }
+.dict-row__en { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.25; }
+.dict-row__ru { font-size: 14px; color: var(--ink-2); }
+.dict-row.is-new .dict-row__en,
+.dict-row.is-new .dict-row__ru { color: var(--ink-3); }
+.dict-row__mark { color: var(--good); }
+.dict-row__mark .icon { width: 18px; height: 18px; }
+
+/* ——— карточка термина в словаре ——— */
+.screen--term { padding-top: var(--sat); }
+.term-page__top { display: flex; justify-content: space-between; flex: none; padding: 6px; }
+.term-page { padding: 4px var(--gutter) 40px; }
+.term-page .term-card__en { margin-top: 10px; }
+.term-page__about { margin: 16px 0 0; color: var(--ink-2); line-height: 1.55; }
+.term-page__relations { display: grid; gap: 12px; margin-top: 20px; }
+.relation { display: grid; gap: 6px; }
+.relation__label { font-size: 13px; color: var(--ink-3); }
+.term-link {
+  display: grid;
+  justify-items: start;
+  min-height: 48px;
+  padding: 6px 12px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.term-link__en { font-family: var(--serif); font-weight: 600; }
+.term-link__ru { font-size: 13px; color: var(--ink-2); }
+.term-page__figure { display: block; width: 100%; margin: 0 0 16px; text-align: left; }
+.term-page__figure .diagram { height: 300px; }
+.term-page__figure.is-pressed .diagram { box-shadow: inset 0 0 0 2px var(--ink); }
+.term-page__figcap { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; font-size: 13px; color: var(--ink-3); }
+.term-page__open { color: var(--ink); font-weight: 500; white-space: nowrap; }
+
+/* ——— профиль: замечания и перенос ——— */
+.profile__note { margin: 0 0 12px; color: var(--ink-2); }
+.profile__actions { display: grid; gap: 10px; }
+.reports { margin: 0 0 16px; padding: 0; list-style: none; }
+.report-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-top: 1px solid var(--hairline);
+}
+.report-row:last-child { border-bottom: 1px solid var(--hairline); }
+.report-row__text { display: grid; flex: 1 1 auto; min-width: 0; }
+.report-row__what { font-weight: 500; }
+.report-row__why { font-size: 14px; color: var(--ink-2); }
+.reports__dump { font-size: 13px; }

@@ -1,0 +1,360 @@
+/* Урок: шапка, задания, полоса обратной связи. */
+
+.screen--lesson { padding-top: var(--sat); }
+
+.lesson__top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  padding: 6px 12px 0 6px;
+}
+.lesson__bar {
+  flex: 1 1 auto;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--hairline);
+  overflow: hidden;
+}
+.lesson__bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-mid) var(--ease-out);
+}
+.lesson__counter {
+  min-width: 44px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--ink-3);
+}
+
+.lesson__task {
+  flex: none;
+  padding: 10px var(--gutter) 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.lesson__task.is-retry { color: var(--bad); }
+
+.lesson__host {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 8px var(--gutter) calc(20px + var(--sab));
+}
+
+/* ——— общий каркас задания ——— */
+.ex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.ex--enter { animation: ex-in var(--t-mid) var(--ease-out) both; }
+@keyframes ex-in { from { opacity: 0; transform: translate3d(0, 8px, 0); } to { opacity: 1; transform: none; } }
+
+.ex__action {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+/* ——— карточка термина ——— */
+.term-card,
+.rule-card {
+  margin-top: 12px;
+  padding: 22px 20px 20px;
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.term-card__en {
+  margin: 14px 0 0;
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+.term-card__plural {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+.term-card__plural span { font-family: var(--serif); color: var(--ink-2); }
+.term-card__ru {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.term-card__also {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+.term-card__also span { color: var(--ink-2); }
+.term-card__about {
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+/* ——— карточка-правило ——— */
+.rule-card__title {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.rule-card__p {
+  margin: 0 0 12px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.rule-card__examples {
+  display: grid;
+  grid-template-columns: minmax(0, auto) 1fr;
+  gap: 8px 18px;
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+}
+.rule-card__examples dt { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.rule-card__examples dd { margin: 0; color: var(--ink-2); align-self: center; }
+
+/* ——— вопрос ——— */
+.prompt {
+  padding: 28px 0 24px;
+}
+.prompt__text {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.prompt--en .prompt__text {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ——— варианты ——— */
+.options {
+  display: grid;
+  gap: 10px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 58px;
+  padding: 10px 16px 10px 12px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  transition: box-shadow var(--t-fast), background var(--t-fast), opacity var(--t-fast);
+}
+.option.is-pressed { background: var(--surface-2); }
+.option__letter {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+.option__text { font-size: 17px; line-height: 1.3; }
+.option__text:lang(en) { font-family: var(--serif); font-size: 18px; }
+.option.is-right { background: var(--good-soft); box-shadow: inset 0 0 0 2px var(--good); }
+.option.is-right .option__letter { background: var(--good); color: var(--surface); box-shadow: none; }
+.option.is-wrong { background: var(--bad-soft); box-shadow: inset 0 0 0 2px var(--bad); }
+.option.is-wrong .option__letter { background: var(--bad); color: var(--surface); box-shadow: none; }
+.option.is-dim { opacity: 0.45; }
+
+/* ——— написание ——— */
+.typing__field { display: block; }
+.typing__input {
+  width: 100%;
+  padding: 10px 2px;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 600;
+  outline: none;
+}
+.typing__input::placeholder { font-family: var(--sans); font-size: 18px; font-weight: 400; color: var(--ink-4); }
+.typing__input.is-right { border-color: var(--good); color: var(--good); }
+.typing__input.is-wrong { border-color: var(--bad); color: var(--bad); text-decoration: line-through; text-decoration-thickness: 2px; }
+
+/* ——— пары ——— */
+.pairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 16px;
+}
+.pairs__col { display: grid; gap: 10px; align-content: start; }
+.pair {
+  min-height: 64px;
+  padding: 8px 12px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: 15px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  transition: box-shadow var(--t-fast), background var(--t-fast), opacity var(--t-mid);
+}
+.pair--en { font-family: var(--serif); font-size: 16px; font-weight: 600; }
+.pair.is-picked { box-shadow: inset 0 0 0 2px var(--ink); background: var(--surface-2); }
+.pair.is-matched { box-shadow: inset 0 0 0 1px var(--good); background: var(--good-soft); color: var(--good); opacity: 0.6; }
+.pair.is-bad { box-shadow: inset 0 0 0 2px var(--bad); background: var(--bad-soft); animation: nudge 300ms var(--ease-out); }
+@keyframes nudge { 0%, 100% { transform: none; } 30% { transform: translateX(-4px); } 70% { transform: translateX(4px); } }
+
+/* ——— обратная связь ——— */
+.feedback {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: grid;
+  gap: 12px;
+  padding: 18px var(--gutter) calc(18px + var(--sab));
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  background: var(--surface);
+  box-shadow: var(--shadow-sheet);
+  transform: translate3d(0, 105%, 0);
+  transition: transform var(--t-mid) var(--ease-out);
+  visibility: hidden;
+}
+.feedback.is-shown { transform: none; visibility: visible; }
+.feedback.is-right { background: var(--good-soft); }
+.feedback.is-wrong { background: var(--bad-soft); }
+
+.feedback__head { display: flex; gap: 12px; align-items: flex-start; }
+.feedback__icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 50%;
+  color: var(--surface);
+}
+.feedback__icon .icon { width: 20px; height: 20px; stroke-width: 2.4; }
+.is-right .feedback__icon { background: var(--good); }
+.is-wrong .feedback__icon { background: var(--bad); }
+.feedback__body { display: grid; gap: 2px; padding-top: 3px; }
+.feedback__title { font-size: 18px; font-weight: 600; line-height: 1.3; }
+.is-right .feedback__title { color: var(--good); }
+.is-wrong .feedback__title { color: var(--bad); }
+.feedback__text { font-size: 15px; color: var(--ink); }
+.feedback__why { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+
+/* ——— задания на схеме ——— */
+.ex--diagram { gap: 12px; }
+.ex--diagram .diagram {
+  flex: 1 1 auto;
+  min-height: 300px;
+}
+.prompt--tight { padding: 12px 0 0; }
+.prompt__sub { margin-top: 2px; font-size: 16px; color: var(--ink-2); }
+.options--compact { gap: 8px; }
+.options--compact .option { min-height: 50px; }
+
+.term-card__where {
+  margin: 20px 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.term-card__diagram { height: 300px; }
+
+/* ——— строка названия задания с флажком ——— */
+.lesson__task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-right: 8px;
+}
+.lesson__flag { width: 40px; height: 40px; color: var(--ink-3); }
+.lesson__flag .icon { width: 20px; height: 20px; }
+
+/* ——— кровоснабжение: варианты на двух языках ——— */
+.prompt__text--en { font-family: var(--serif); font-size: 28px; font-weight: 600; letter-spacing: -0.01em; }
+.option__text--two { display: grid; gap: 1px; }
+.option__text--two > :first-child { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.option__sub { font-size: 14px; color: var(--ink-2); }
+
+/* ——— путь по порядку ——— */
+.path__hint { margin: 4px 0 12px; font-size: 14px; color: var(--ink-3); }
+.path__chain {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+.path__slot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 4px 12px 4px 4px;
+  border-radius: var(--r-md);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  background: var(--paper);
+}
+.path__slot.is-filled { background: var(--surface); box-shadow: inset 0 0 0 1px var(--good); }
+.path__num {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-3);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.path__slot.is-filled .path__num { background: var(--good); color: var(--surface); box-shadow: none; }
+.path__placed { font-family: var(--serif); font-weight: 600; }
+.path__pile { display: flex; flex-wrap: wrap; gap: 8px; }
+.path__chip {
+  display: grid;
+  min-height: 52px;
+  padding: 6px 14px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  text-align: left;
+  transition: opacity var(--t-mid);
+}
+.path__chip.is-pressed { background: var(--surface-2); }
+.path__chip.is-placed { opacity: 0.25; }
+.path__chip.is-bad { box-shadow: inset 0 0 0 2px var(--bad); background: var(--bad-soft); animation: nudge 300ms var(--ease-out); }
+.path__en { font-family: var(--serif); font-weight: 600; }
+.path__ru { font-size: 13px; color: var(--ink-2); }

@@ -1,0 +1,91 @@
+{
+  "terms": [
+    {
+      "id": "t_microcirculation",
+      "en": "microcirculation",
+      "ru": "микроциркуляция",
+      "kind": "concept",
+      "system": "circulatory",
+      "about": "Ток крови по самым мелким сосудам — артериолам, капиллярам и венулам. Именно здесь кровь обменивается веществами с тканями.",
+      "relations": {},
+      "diagrams": [],
+      "audio": null,
+      "source": "Gray's Anatomy; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_arteriole",
+      "en": "arteriole",
+      "ru": "артериола",
+      "kind": "artery",
+      "system": "circulatory",
+      "about": "Самая мелкая артерия, видна только под микроскопом. В стенке есть гладкие мышцы: сужаясь и расширяясь, артериолы регулируют приток крови к капиллярам.",
+      "relations": {},
+      "diagrams": ["d_microcirculation"],
+      "audio": null,
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_venule",
+      "en": "venule",
+      "ru": "венула",
+      "kind": "vein",
+      "system": "circulatory",
+      "confusableWith": ["t_vein"],
+      "about": "Самая мелкая вена: собирает кровь из капилляров и несёт её в более крупные вены.",
+      "relations": {},
+      "diagrams": ["d_microcirculation"],
+      "audio": null,
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_precapillary_sphincter",
+      "en": "precapillary sphincter",
+      "ru": "прекапиллярный сфинктер",
+      "kind": "structure",
+      "system": "circulatory",
+      "about": "Кольцо гладкомышечных клеток там, где от мелкой артериолы отходит капилляр. Сокращаясь, перекрывает ток крови в этот капилляр.",
+      "relations": {},
+      "diagrams": ["d_microcirculation"],
+      "audio": null,
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_postcapillary_venule",
+      "en": "postcapillary venule",
+      "ru": "посткапиллярная венула",
+      "also": { "ru": ["посткапилляр"] },
+      "kind": "vein",
+      "system": "circulatory",
+      "about": "Начальный отрезок венулы, в который сливаются капилляры. Стенка у неё тонкая, и через неё ещё идёт обмен с тканями.",
+      "relations": {},
+      "diagrams": ["d_microcirculation"],
+      "audio": null,
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_arteriovenous_anastomosis",
+      "en": "arteriovenous anastomosis",
+      "ru": "артериоло-венулярный анастомоз",
+      "also": { "ru": ["артериовенозный анастомоз"] },
+      "kind": "vessel",
+      "system": "circulatory",
+      "about": "Прямое соединение артериолы с венулой в обход капилляров. Когда оно открыто, кровь сбрасывается в вены, минуя обмен с тканями.",
+      "relations": {},
+      "diagrams": ["d_microcirculation"],
+      "audio": null,
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    }
+  ]
+}

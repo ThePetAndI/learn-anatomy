@@ -1,0 +1,150 @@
+/* Схемы: оформление по классам из content/diagrams, подсветка, просмотрщик. */
+
+.diagram {
+  position: relative;
+  display: flex;
+  min-height: 0;
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  overflow: hidden;
+}
+
+.anat {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.diagram.is-zoomable .anat { touch-action: none; cursor: grab; }
+.diagram.is-zoomable .anat.is-panning { cursor: grabbing; }
+
+/* ——— ткани и сосуды ——— */
+.anat .bed { fill: var(--bed); stroke: var(--vessel); stroke-width: 1.2; }
+.anat .cap { fill: none; stroke: var(--vessel); stroke-width: 1.4; stroke-linecap: round; }
+.anat .organ { fill: var(--lung); stroke: var(--lung-edge); stroke-width: 1.5; }
+.anat .muscle { fill: var(--muscle); stroke: var(--muscle-edge); stroke-width: 1.5; }
+.anat .apex { fill: var(--muscle); }
+.anat .septum { fill: none; stroke: var(--septum); stroke-linecap: round; }
+.anat .cavity-oxy { fill: var(--artery-soft); stroke: var(--artery); stroke-width: 1.5; }
+.anat .cavity-deoxy { fill: var(--vein-soft); stroke: var(--vein); stroke-width: 1.5; }
+.anat .vessel-oxy { fill: none; stroke: var(--artery); stroke-linecap: round; stroke-linejoin: round; }
+.anat .vessel-deoxy { fill: none; stroke: var(--vein); stroke-linecap: round; stroke-linejoin: round; }
+.anat .valve { fill: var(--valve); stroke: var(--valve-edge); stroke-width: 1.3; stroke-linejoin: round; }
+.anat .valve-ring { fill: none; stroke: var(--valve-edge); stroke-width: 2.5; stroke-linecap: round; }
+.anat .outline { fill: var(--body); stroke: var(--ink-4); stroke-width: 1.5; }
+.anat .landmark { fill: none; stroke: var(--ink-4); stroke-width: 1.5; stroke-dasharray: 5 5; }
+.anat .groove { fill: none; stroke: var(--muscle-edge); stroke-width: 4; stroke-linecap: round; }
+.anat .node { fill: var(--conduct); stroke: var(--surface); stroke-width: 1.5; }
+.anat .conduct { fill: none; stroke: var(--conduct); stroke-linecap: round; stroke-linejoin: round; }
+.anat .line { fill: none; stroke: var(--lung-edge); stroke-width: 1.5; stroke-linecap: round; }
+.anat .nerve { fill: none; stroke: var(--nerve); stroke-linecap: round; stroke-linejoin: round; }
+.anat .ring { fill: none; stroke: var(--muscle); stroke-linecap: round; }
+.anat .zone-1 { fill: var(--zone-1); stroke: none; }
+.anat .zone-2 { fill: var(--zone-2); stroke: none; }
+.anat .zone-3 { fill: var(--zone-3); stroke: none; }
+.anat .tube { fill: none; stroke: var(--lung); stroke-linecap: round; stroke-linejoin: round; }
+/* сосуд позади — пунктиром: глубокая вена, подколенная артерия на виде спереди */
+.anat .behind { stroke-dasharray: 8 6; stroke-linecap: butt; }
+
+/* ——— нажатие: только структуры с data-term, зоны нажатия невидимы ——— */
+.anat * { pointer-events: none; }
+.anat [data-term] * { pointer-events: visiblePainted; }
+.anat .hit { fill: none; stroke: transparent; pointer-events: stroke; }
+.anat .hit-area { fill: transparent; stroke: none; pointer-events: all; }
+.diagram:not(.is-pickable) .anat * { pointer-events: none; }
+
+/* ——— подсветка: контур вокруг структуры и приглушённое всё остальное ——— */
+.anat :is(path, rect, circle, ellipse):not(.hit) { transition: opacity var(--t-fast); }
+.anat.has-hl :is(path, rect, circle, ellipse):not(.hit) { opacity: 0.26; }
+.anat.has-hl :is(.is-hl, .is-miss) :is(path, rect, circle, ellipse):not(.hit) { opacity: 1; }
+.anat feFlood.flood-hl { flood-color: var(--ink); }
+.anat feFlood.flood-miss { flood-color: var(--bad); }
+
+/*
+ * ——— кнопки масштаба ———
+ * Ряд в правом верхнем углу: там на схемах только концы длинных сосудов.
+ * Внизу справа кнопки закрывали верхушку сердца — маленькую структуру,
+ * которую надо найти.
+ */
+.diagram__zoom {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
+}
+.diagram__zoom .icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink-2);
+}
+
+/* ——— подпись нажатой структуры: на обоих языках ——— */
+.caption {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2px 12px;
+  min-height: 64px;
+  padding: 10px 16px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.caption__en { font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.2; }
+.caption__ru { grid-column: 1; color: var(--ink-2); }
+.caption .kind { grid-column: 2; grid-row: 1 / span 2; }
+.caption__hint { grid-column: 1 / -1; color: var(--ink-3); font-size: 14px; }
+.caption__about { grid-column: 1 / -1; margin: 6px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+
+/* ——— атлас ——— */
+.atlas { padding: 0 var(--gutter) 40px; }
+.atlas__note { margin: -8px 0 20px; color: var(--ink-2); font-size: 15px; }
+.atlas__grid { display: grid; gap: 14px; }
+.atlas-item {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.atlas-item.is-pressed { background: var(--surface-2); }
+.atlas-item .diagram { height: 136px; box-shadow: none; background: var(--paper); }
+.atlas-item__text { display: grid; gap: 2px; }
+.atlas-item__title { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.25; }
+.atlas-item__meta { font-size: 13px; color: var(--ink-3); }
+
+.screen--atlas-view { padding-top: var(--sat); }
+.atlas-view__top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+  padding: 6px 12px 6px 6px;
+}
+.atlas-view__title {
+  flex: 1 1 auto;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.atlas-view__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  gap: 10px;
+  padding: 0 var(--gutter) calc(16px + var(--sab));
+}
+.atlas-view__body .diagram { flex: 1 1 auto; }
+.atlas-view__body .caption { flex: none; }

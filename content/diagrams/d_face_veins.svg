@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" data-diagram="d_face_veins">
+  <title>Вены лица (вид справа)</title>
+  <!--
+    Тот же контур, что у артерий лица. Угловая вена у внутреннего угла глаза
+    переходит в лицевую; та идёт позади лицевой артерии вниз и назад и впадает
+    во внутреннюю яремную. Занижнечелюстная — позади ветви челюсти, в околоушной
+    железе. Глубоко — пунктиром — крыловидное сплетение, верхняя глазная вена
+    (от угловой вены через глазницу) и пещеристый синус в полости черепа.
+    Связи сплетения с лицевой веной и с синусом показаны без подписи.
+  -->
+  <path class="outline" d="M150 20C80 24 38 80 38 160C38 220 56 262 84 290C96 330 92 380 90 420H238C236 392 236 368 244 350C268 346 288 344 298 340C312 334 318 324 316 312C314 300 310 294 312 288C322 282 324 272 316 266C324 258 326 248 316 240C314 232 314 226 318 222C332 218 342 210 338 200C330 186 312 168 300 156C302 146 304 138 298 128C298 96 286 62 256 42C228 24 190 18 150 20Z"/>
+  <path class="landmark" d="M146 186C130 186 124 206 128 224C132 242 144 254 156 250C166 246 168 232 160 222C168 210 164 190 146 186Z"/>
+  <path class="landmark" d="M180 244C182 276 186 304 194 322C222 334 262 342 298 342"/>
+  <circle class="landmark" cx="268" cy="150" r="22"/>
+  <circle class="organ" cx="268" cy="150" r="12"/>
+
+  <!-- глубокие связи — без подписи -->
+  <path class="vessel-deoxy behind" stroke-width="3" d="M238 262C252 270 262 278 270 288"/>
+  <path class="vessel-deoxy behind" stroke-width="3" d="M214 228C210 200 208 180 206 166"/>
+
+  <g data-term="t_cavernous_sinus" data-hit="area">
+    <circle class="hit hit-area" cx="206" cy="156" r="24"/>
+    <ellipse class="cavity-deoxy behind" cx="206" cy="156" rx="15" ry="9"/>
+  </g>
+  <g data-term="t_superior_ophthalmic_vein">
+    <path class="hit" stroke-width="48" d="M286 158C268 136 244 134 220 150"/>
+    <path class="vessel-deoxy behind" stroke-width="4" d="M286 158C268 136 244 134 220 150"/>
+  </g>
+  <g data-term="t_pterygoid_plexus" data-hit="area">
+    <rect class="hit hit-area" x="196" y="226" width="52" height="52"/>
+    <path class="vessel-deoxy behind" stroke-width="2.5" d="M204 236C214 244 226 236 238 246M204 252C216 262 228 250 240 262M210 234V272M228 234V274"/>
+  </g>
+
+  <g data-term="t_internal_jugular_vein">
+    <path class="hit" stroke-width="48" d="M196 330V420"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M196 330V420"/>
+  </g>
+  <g data-term="t_retromandibular_vein">
+    <path class="hit" stroke-width="48" d="M180 236C184 266 188 296 196 320C204 334 212 342 220 346"/>
+    <path class="vessel-deoxy" stroke-width="5" d="M180 236C184 266 188 296 196 320C204 334 212 342 220 346"/>
+  </g>
+  <g data-term="t_facial_vein">
+    <path class="hit" stroke-width="48" d="M296 222C292 248 280 270 266 292C252 312 234 332 220 346C210 356 202 362 197 370"/>
+    <path class="vessel-deoxy" stroke-width="6" d="M296 222C292 248 280 270 266 292C252 312 234 332 220 346C210 356 202 362 197 370"/>
+  </g>
+  <g data-term="t_angular_vein">
+    <path class="hit" stroke-width="48" d="M286 158C292 178 296 200 296 222"/>
+    <path class="vessel-deoxy" stroke-width="4" d="M286 158C292 178 296 200 296 222"/>
+  </g>
+</svg>

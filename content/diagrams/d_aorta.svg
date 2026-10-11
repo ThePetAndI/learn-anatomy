@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" data-diagram="d_aorta">
+  <title>Аорта и её ветви (схема)</title>
+  <!--
+    Вид спереди, правая сторона тела слева; середина тела — x = 180,
+    брюшная аорта немного левее (на рисунке правее). Ветви дуги по порядку
+    справа налево: плечеголовной ствол (только справа; делится на правые
+    подключичную и общую сонную), левая общая сонная, левая подключичная.
+    Пунктир — диафрагма: выше — грудная часть аорты, ниже — брюшная.
+    Почечные артерии: правая длиннее, правая почка ниже левой.
+    Нижняя брыжеечная артерия уходит влево (на рисунке вправо).
+    Бифуркация — на уровне четвёртого поясничного позвонка.
+  -->
+
+  <!-- сердце — только для ориентира, первым слоем: грудная аорта проходит позади него -->
+  <path class="outline" d="M156 196C116 214 112 266 156 292C204 318 268 300 280 260C288 222 258 194 222 192C200 191 176 190 156 196Z"/>
+
+  <!-- аорта целиком: части вложены, чтобы «найди аорту» принимала любую -->
+  <g data-term="t_aorta">
+    <g data-term="t_ascending_aorta">
+      <path class="hit" stroke-width="48" d="M190 206C186 178 178 152 178 128"/>
+      <path class="vessel-oxy" stroke-width="18" d="M190 206C186 178 178 152 178 128"/>
+    </g>
+    <g data-term="t_aortic_arch">
+      <path class="hit" stroke-width="48" d="M178 128C176 88 206 66 232 70C256 74 266 96 266 122"/>
+      <path class="vessel-oxy" stroke-width="18" d="M178 128C176 88 206 66 232 70C256 74 266 96 266 122"/>
+    </g>
+    <g data-term="t_descending_aorta">
+      <g data-term="t_thoracic_aorta">
+        <path class="hit" stroke-width="48" d="M266 122C266 192 210 244 198 300L196 330"/>
+        <path class="vessel-oxy behind" stroke-width="16" d="M266 122C266 192 210 244 198 300L196 330"/>
+      </g>
+      <g data-term="t_abdominal_aorta">
+        <path class="hit" stroke-width="48" d="M196 330V538"/>
+        <path class="vessel-oxy" stroke-width="15" d="M196 330V552"/>
+        <g data-term="t_aortic_bifurcation" data-hit="area">
+          <rect class="hit hit-area" x="172" y="526" width="48" height="48"/>
+          <path class="vessel-oxy" stroke-width="15" d="M196 540V552"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ветви дуги -->
+  <g data-term="t_brachiocephalic_trunk">
+    <path class="hit" stroke-width="48" d="M184 100C178 86 172 72 164 60"/>
+    <path class="vessel-oxy" stroke-width="11" d="M184 100C178 86 172 72 164 60"/>
+  </g>
+  <g data-term="t_subclavian_artery">
+    <path class="hit" stroke-width="48" d="M164 60C140 54 108 58 62 70"/>
+    <path class="vessel-oxy" stroke-width="9" d="M164 60C140 54 108 58 62 70"/>
+  </g>
+  <g data-term="t_common_carotid_artery">
+    <path class="hit" stroke-width="48" d="M164 60C162 42 160 26 158 8"/>
+    <path class="vessel-oxy" stroke-width="8" d="M164 60C162 42 160 26 158 8"/>
+  </g>
+  <g data-term="t_common_carotid_artery">
+    <path class="hit" stroke-width="48" d="M216 70C214 50 212 30 212 8"/>
+    <path class="vessel-oxy" stroke-width="8" d="M216 70C214 50 212 30 212 8"/>
+  </g>
+  <g data-term="t_subclavian_artery">
+    <path class="hit" stroke-width="48" d="M246 76C256 60 274 54 316 62"/>
+    <path class="vessel-oxy" stroke-width="9" d="M246 76C256 60 274 54 316 62"/>
+  </g>
+
+  <!-- диафрагма -->
+  <path class="landmark" d="M60 330C120 316 240 316 300 330"/>
+
+  <!-- почки и почечные артерии -->
+  <g data-term="t_kidney" data-hit="area">
+    <path class="organ" d="M96 384C74 384 66 410 68 428C70 450 80 466 98 466C112 466 118 454 114 440C110 428 112 414 118 404C122 394 112 384 96 384Z"/>
+  </g>
+  <g data-term="t_kidney" data-hit="area">
+    <path class="organ" d="M276 370C298 370 306 396 304 414C302 436 292 452 274 452C260 452 254 440 258 426C262 414 260 400 254 390C250 380 260 370 276 370Z"/>
+  </g>
+  <g data-term="t_renal_artery">
+    <path class="hit" stroke-width="48" d="M196 392C170 396 142 404 116 416"/>
+    <path class="vessel-oxy" stroke-width="7" d="M196 392C170 396 142 404 116 416"/>
+  </g>
+  <g data-term="t_renal_artery">
+    <path class="hit" stroke-width="48" d="M196 392C218 392 238 396 256 404"/>
+    <path class="vessel-oxy" stroke-width="7" d="M196 392C218 392 238 396 256 404"/>
+  </g>
+
+  <!-- непарные ветви брюшной аорты -->
+  <g data-term="t_celiac_trunk">
+    <path class="hit" stroke-width="48" d="M196 344C184 342 172 338 160 332"/>
+    <path class="vessel-oxy" stroke-width="7" d="M196 344C184 342 172 338 160 332"/>
+  </g>
+  <g data-term="t_superior_mesenteric_artery">
+    <path class="hit" stroke-width="48" d="M196 366C184 380 176 402 172 440"/>
+    <path class="vessel-oxy" stroke-width="7" d="M196 366C184 380 176 402 172 440"/>
+  </g>
+  <g data-term="t_inferior_mesenteric_artery">
+    <path class="hit" stroke-width="48" d="M196 482C210 494 222 510 230 532"/>
+    <path class="vessel-oxy" stroke-width="5" d="M196 482C210 494 222 510 230 532"/>
+  </g>
+
+  <!-- общие подвздошные — конечные ветви -->
+  <g data-term="t_common_iliac_artery">
+    <path class="hit" stroke-width="48" d="M196 552C186 576 172 602 158 632"/>
+    <path class="vessel-oxy" stroke-width="10" d="M196 552C186 576 172 602 158 632"/>
+  </g>
+  <g data-term="t_common_iliac_artery">
+    <path class="hit" stroke-width="48" d="M196 552C206 576 220 602 234 632"/>
+    <path class="vessel-oxy" stroke-width="10" d="M196 552C206 576 220 602 234 632"/>
+  </g>
+</svg>

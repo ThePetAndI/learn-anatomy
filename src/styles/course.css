@@ -1,0 +1,205 @@
+/* Экран курса: заголовок, «Продолжить», системы, разделы, уроки на линии-сосуде. */
+
+.course {
+  padding: 0 var(--gutter) 40px;
+}
+
+.course__head {
+  padding: 32px 0 20px;
+}
+.course__title {
+  margin: 4px 0 6px;
+  font-family: var(--serif);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.course__sub {
+  margin: 0;
+  max-width: 30ch;
+  color: var(--ink-2);
+}
+.course__done {
+  margin: 0 0 8px;
+  color: var(--ink-2);
+}
+
+/* ——— продолжить: единственный тёмный блок на экране ——— */
+.continue {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 18px 18px 18px 20px;
+  border-radius: var(--r-lg);
+  background: var(--ink);
+  color: var(--paper);
+  transition: transform var(--t-fast);
+}
+.continue.is-pressed { transform: scale(0.99); }
+.continue__text { display: grid; gap: 2px; flex: 1 1 auto; min-width: 0; }
+.continue__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.66;
+}
+.continue__title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.continue__section { font-size: 14px; opacity: 0.72; }
+.continue__arrow { width: 26px; height: 26px; }
+
+/* ——— система ——— */
+.system { --sys: var(--artery); --sys-soft: var(--artery-soft); }
+.system--nervous { --sys: var(--nerve); --sys-soft: var(--nerve-soft); }
+
+.system__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 32px 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.system__title::before {
+  content: '';
+  width: 22px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--sys);
+}
+
+/* ——— раздел ——— */
+.section {
+  padding: 18px 0 6px;
+  border-bottom: 1px solid var(--hairline);
+}
+.section:last-child { border-bottom: 0; }
+
+.section__head {
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  align-items: baseline;
+  gap: 8px;
+}
+.section__num {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--ink-3);
+}
+.section__title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.section__pct {
+  font-size: 13px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+.section.is-empty .section__title { color: var(--ink-3); font-weight: 500; }
+.section.is-empty .section__pct { color: var(--ink-4); }
+
+.section__progress {
+  height: 2px;
+  margin: 12px 0 6px 36px;
+  background: var(--hairline);
+  overflow: hidden;
+}
+.section__progress > span {
+  display: block;
+  height: 100%;
+  background: var(--sys);
+  transform-origin: left;
+}
+
+/* ——— уроки, нанизанные на линию ——— */
+.lesson-list {
+  position: relative;
+  padding: 4px 0 10px;
+}
+.lesson-list::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  bottom: 34px;
+  left: 13px;
+  width: 2px;
+  background: var(--sys-soft);
+}
+
+.lesson-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 0;
+  border-radius: var(--r-sm);
+}
+.lesson-row.is-pressed { background: var(--surface-2); }
+
+.lesson-row__node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 2px var(--ink-4);
+}
+.lesson-row__node .icon { width: 16px; height: 16px; stroke-width: 2.4; }
+
+.lesson-row.is-done .lesson-row__node { background: var(--sys); box-shadow: none; color: var(--paper); }
+.lesson-row.is-current .lesson-row__node { box-shadow: inset 0 0 0 3px var(--sys); }
+.lesson-row.is-current .lesson-row__node::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--sys);
+}
+.lesson-row.is-open .lesson-row__node { box-shadow: inset 0 0 0 2px var(--sys); }
+
+.lesson-row__text { display: grid; flex: 1 1 auto; min-width: 0; }
+.lesson-row__title { font-size: 16px; font-weight: 500; line-height: 1.3; }
+.lesson-row__meta { font-size: 13px; color: var(--ink-3); }
+.lesson-row.is-current .lesson-row__title { font-weight: 600; }
+.lesson-row.is-locked .lesson-row__title { color: var(--ink-3); }
+.lesson-row__lock { width: 18px; height: 18px; color: var(--ink-4); }
+
+/* ——— повторение раздела ——— */
+.section-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  margin: 0 0 12px;
+  padding: 0 14px;
+  border-radius: var(--r-md);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  background: var(--surface);
+  color: var(--ink);
+}
+.section-review.is-pressed { background: var(--surface-2); }
+.section-review .icon { width: 20px; height: 20px; color: var(--sys); }
+.section-review__label { flex: 1 1 auto; font-weight: 500; text-align: left; }
+.section-review__meta { font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }

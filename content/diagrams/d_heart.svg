@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" data-diagram="d_heart">
+  <title>Сердце в разрезе (схема)</title>
+  <!--
+    Вид спереди, правая сторона тела слева. Все четыре клапана показаны
+    на одном рисунке — в одном настоящем срезе их не видно, это схема.
+    Порядок слоёв — спереди назад:
+      правая лёгочная артерия — позади верхней полой вены и восходящей аорты;
+      нисходящая аорта — позади сердца;
+      выносящий отдел правого желудочка и лёгочный ствол — впереди корня аорты
+      и левее его (справа на рисунке); клапан лёгочного ствола выше клапана аорты.
+  -->
+
+  <!-- позади всего: правая лёгочная артерия, нисходящая аорта -->
+  <g data-term="t_pulmonary_arteries">
+    <path class="hit" stroke-width="48" d="M252 112C220 110 140 108 34 112"/>
+    <path class="vessel-deoxy" stroke-width="14" d="M252 112C220 110 140 108 34 112"/>
+  </g>
+  <g data-term="t_aorta">
+    <path class="hit" stroke-width="48" d="M310 100V236"/>
+    <path class="vessel-oxy" stroke-width="22" d="M310 100V236"/>
+  </g>
+
+  <!-- полые вены впадают в правое предсердие -->
+  <g data-term="t_superior_vena_cava">
+    <path class="hit" stroke-width="48" d="M128 14V142"/>
+    <path class="vessel-deoxy" stroke-width="24" d="M128 14V142"/>
+  </g>
+  <g data-term="t_inferior_vena_cava">
+    <path class="hit" stroke-width="48" d="M104 452V250"/>
+    <path class="vessel-deoxy" stroke-width="26" d="M104 452V250"/>
+  </g>
+
+  <!-- миокард: стенка, перегородки, верхушка -->
+  <g data-term="t_myocardium" data-hit="area">
+    <path class="muscle" d="M92 128C70 136 62 170 64 210C66 250 78 284 104 318C150 372 214 404 272 424C290 430 302 420 302 402C306 330 312 240 308 172C306 136 288 114 260 114H120C108 114 100 120 92 128Z"/>
+    <g data-term="t_interatrial_septum">
+      <path class="hit" stroke-width="48" d="M180 136V214"/>
+      <path class="septum" stroke-width="12" d="M180 136V214"/>
+    </g>
+    <g data-term="t_interventricular_septum">
+      <path class="hit" stroke-width="48" d="M214 274L250 396"/>
+      <path class="septum" stroke-width="14" d="M214 274L250 396"/>
+    </g>
+    <g data-term="t_apex_of_heart" data-hit="area">
+      <path class="apex" d="M246 402C262 396 284 384 301 374C302 384 302 394 302 402C302 420 290 430 272 424C262 420 254 412 246 402Z"/>
+    </g>
+  </g>
+
+  <!-- камеры -->
+  <g data-term="t_right_atrium" data-hit="area">
+    <path class="cavity-deoxy" d="M96 146C90 160 86 186 90 214C94 238 104 254 118 262H160C168 262 172 256 172 248V144C172 134 166 128 156 128H110C102 128 98 136 96 146Z"/>
+  </g>
+  <g data-term="t_left_atrium" data-hit="area">
+    <path class="cavity-oxy" d="M198 126H284C294 126 300 134 300 144V186C300 194 294 200 286 200H198C192 200 188 194 188 188V136C188 130 192 126 198 126Z"/>
+  </g>
+  <g data-term="t_left_ventricle" data-hit="area">
+    <path class="cavity-oxy" d="M190 224H220C226 224 230 228 232 232L236 240H290C298 240 303 248 302 258C298 306 292 344 282 380C278 394 266 396 260 386L224 288C220 276 214 262 204 256C194 250 186 244 186 234C186 228 188 224 190 224Z"/>
+  </g>
+  <!-- правый желудочек вместе с выносящим отделом: он лежит впереди выносящего отдела левого -->
+  <g data-term="t_right_ventricle" data-hit="area">
+    <path class="cavity-deoxy" d="M120 280H190L230 212C234 204 244 198 252 202L256 206C262 210 262 216 260 222L214 300L238 386C240 398 230 404 218 398C176 378 140 350 120 318C112 304 110 280 120 280Z"/>
+  </g>
+
+  <!-- предсердно-желудочковые клапаны -->
+  <g data-term="t_tricuspid_valve">
+    <rect class="hit hit-area" x="114" y="248" width="86" height="58"/>
+    <path class="valve-ring" d="M118 271H198"/>
+    <path class="valve" d="M128 271C130 288 136 300 144 304C146 294 148 282 150 271Z M164 271C168 286 174 298 182 302C186 292 188 282 190 271Z"/>
+  </g>
+  <g data-term="t_mitral_valve">
+    <rect class="hit hit-area" x="238" y="196" width="66" height="66"/>
+    <path class="valve-ring" d="M244 220H298"/>
+    <path class="valve" d="M248 220C250 238 256 250 262 254C264 244 266 232 268 220Z M276 220C278 234 282 246 290 250C294 240 296 230 296 220Z"/>
+  </g>
+
+  <!-- левые лёгочные вены входят в левое предсердие — впереди нисходящей аорты -->
+  <g data-term="t_pulmonary_veins">
+    <path class="hit" stroke-width="48" d="M356 148C334 148 314 150 292 152 M356 180C334 178 314 176 292 174"/>
+    <path class="vessel-oxy" stroke-width="12" d="M356 148C334 148 314 150 292 152 M356 180C334 178 314 176 292 174"/>
+  </g>
+
+  <!-- восходящая аорта и дуга — из левого желудочка, впереди предсердий -->
+  <g data-term="t_aorta">
+    <path class="hit" stroke-width="48" d="M198 236C196 204 184 176 178 146C174 118 174 92 184 76C200 48 272 44 298 68C308 78 310 90 310 104"/>
+    <path class="vessel-oxy" stroke-width="26" d="M198 236C196 204 184 176 178 146C174 118 174 92 184 76C200 48 272 44 298 68C308 78 310 90 310 104"/>
+  </g>
+  <g data-term="t_aortic_valve" data-hit="area">
+    <circle class="hit hit-area" cx="198" cy="232" r="24"/>
+    <path class="valve" d="M186 228Q192 242 198 228Q204 242 210 228Z"/>
+  </g>
+
+  <!-- лёгочный ствол — самый передний -->
+  <g data-term="t_pulmonary_trunk">
+    <path class="hit" stroke-width="48" d="M246 206C248 172 250 140 252 112"/>
+    <path class="vessel-deoxy" stroke-width="22" d="M246 206C248 172 250 140 252 112"/>
+  </g>
+  <g data-term="t_pulmonary_valve" data-hit="area">
+    <circle class="hit hit-area" cx="246" cy="204" r="24"/>
+    <path class="valve" d="M236 202Q241 214 246 202Q251 214 256 202Z"/>
+  </g>
+  <g data-term="t_pulmonary_arteries">
+    <path class="hit" stroke-width="48" d="M252 112C280 106 320 104 356 106"/>
+    <path class="vessel-deoxy" stroke-width="14" d="M252 112C280 106 320 104 356 106"/>
+  </g>
+</svg>

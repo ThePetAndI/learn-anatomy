@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" data-diagram="d_facial_nerve">
+  <title>Лицевой нерв и мимические мышцы (вид справа)</title>
+  <!--
+    Лицевой нерв выходит из черепа позади уха (шилососцевидное отверстие),
+    входит в околоушную железу и в ней делится на пять групп ветвей — сверху
+    вниз: височные, скуловые, щёчные, краевая ветвь нижней челюсти, шейная.
+    Ветви вложены в лицевой нерв: «найди лицевой нерв» принимает любую.
+    Мышцы: круговые мышцы глаза и рта, щёчная — от лицевого нерва;
+    жевательная — от нижнечелюстного (ветвь тройничного), ветви лицевого
+    нерва только проходят поверх неё.
+  -->
+  <path class="outline" d="M150 20C80 24 38 80 38 160C38 220 56 262 84 290C96 330 92 380 90 420H238C236 392 236 368 244 350C268 346 288 344 298 340C312 334 318 324 316 312C314 300 310 294 312 288C322 282 324 272 316 266C324 258 326 248 316 240C314 232 314 226 318 222C332 218 342 210 338 200C330 186 312 168 300 156C302 146 304 138 298 128C298 96 286 62 256 42C228 24 190 18 150 20Z"/>
+  <path class="landmark" d="M146 186C130 186 124 206 128 224C132 242 144 254 156 250C166 246 168 232 160 222C168 210 164 190 146 186Z"/>
+  <path class="landmark" d="M180 244C182 276 186 304 194 322C222 334 262 342 298 342"/>
+  <path class="landmark" d="M176 222C204 214 232 210 258 206"/>
+  <circle class="organ" cx="268" cy="150" r="12"/>
+
+  <!-- мышцы -->
+  <g data-term="t_masseter" data-hit="area">
+    <path class="muscle" d="M200 222L250 214C254 260 252 300 246 332L204 326C198 290 196 256 200 222Z"/>
+  </g>
+  <g data-term="t_buccinator" data-hit="area">
+    <path class="muscle" d="M254 250C268 244 284 248 292 256C294 268 292 280 286 288C274 292 262 292 254 288C252 276 252 262 254 250Z"/>
+  </g>
+  <g data-term="t_orbicularis_oculi">
+    <rect class="hit hit-area" x="236" y="124" width="64" height="52"/>
+    <ellipse class="ring" stroke-width="9" cx="268" cy="150" rx="26" ry="20"/>
+  </g>
+  <g data-term="t_orbicularis_oris">
+    <rect class="hit hit-area" x="284" y="238" width="48" height="56"/>
+    <ellipse class="ring" stroke-width="8" cx="308" cy="266" rx="14" ry="22"/>
+  </g>
+
+  <!-- околоушная железа поверх задней части жевательной мышцы -->
+  <g data-term="t_parotid_gland" data-hit="area">
+    <path class="organ" d="M166 206C182 200 200 204 210 214C214 236 214 262 210 290C204 304 194 310 184 306C176 284 170 258 166 236C164 224 164 214 166 206Z"/>
+  </g>
+
+  <!-- лицевой нерв: ствол и пять групп ветвей -->
+  <g data-term="t_facial_nerve">
+    <path class="hit" stroke-width="48" d="M150 252C164 254 176 256 190 258"/>
+    <path class="nerve" stroke-width="7" d="M150 252C164 254 176 256 190 258"/>
+    <g data-term="t_temporal_branches">
+      <path class="hit" stroke-width="48" d="M190 258C194 232 200 200 206 170C210 150 214 130 220 110"/>
+      <path class="nerve" stroke-width="3.5" d="M190 258C194 232 200 200 206 170C210 150 214 130 220 110M206 170C222 160 234 150 244 138"/>
+    </g>
+    <g data-term="t_zygomatic_branches">
+      <path class="hit" stroke-width="48" d="M190 258C210 236 230 210 248 172"/>
+      <path class="nerve" stroke-width="3.5" d="M190 258C210 236 230 210 248 172"/>
+    </g>
+    <g data-term="t_buccal_branches">
+      <path class="hit" stroke-width="48" d="M190 258C220 254 250 254 282 252"/>
+      <path class="nerve" stroke-width="3.5" d="M190 258C220 254 250 254 282 252"/>
+    </g>
+    <g data-term="t_marginal_mandibular_branch">
+      <path class="hit" stroke-width="48" d="M190 258C200 290 214 318 240 332C258 338 276 330 292 312"/>
+      <path class="nerve" stroke-width="3.5" d="M190 258C200 290 214 318 240 332C258 338 276 330 292 312"/>
+    </g>
+    <g data-term="t_cervical_branch">
+      <path class="hit" stroke-width="48" d="M190 258C196 300 200 340 204 390"/>
+      <path class="nerve" stroke-width="3.5" d="M190 258C196 300 200 340 204 390"/>
+    </g>
+  </g>
+</svg>

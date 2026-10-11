@@ -1,0 +1,31 @@
+{
+  "name": "learn-anatomy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Тренажёр анатомии кровеносной и нервной систем: термины парами английский — русский (PWA)",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate:content && tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "fonts": "node scripts/fetch-fonts.mjs",
+    "icons": "node scripts/gen-icons.mjs",
+    "validate:content": "node scripts/validate-content.ts",
+    "review": "node scripts/validate-content.ts --write-review"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "fake-indexeddb": "^6.0.0",
+    "sharp": "^0.33.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0",
+    "workbox-window": "^7.3.0"
+  }
+}

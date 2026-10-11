@@ -1,0 +1,219 @@
+{
+  "paths": [
+    {
+      "id": "p_right_heart",
+      "title": "Кровь через правые отделы сердца",
+      "steps": [
+        "t_superior_vena_cava",
+        "t_right_atrium",
+        "t_tricuspid_valve",
+        "t_right_ventricle",
+        "t_pulmonary_valve",
+        "t_pulmonary_trunk"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_left_heart",
+      "title": "Кровь через левые отделы сердца",
+      "steps": [
+        "t_pulmonary_veins",
+        "t_left_atrium",
+        "t_mitral_valve",
+        "t_left_ventricle",
+        "t_aortic_valve",
+        "t_aorta"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_conduction",
+      "title": "Импульс по проводящей системе",
+      "steps": [
+        "t_sinoatrial_node",
+        "t_atrioventricular_node",
+        "t_atrioventricular_bundle",
+        "t_purkinje_fibers"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_aorta",
+      "title": "Вниз по аорте",
+      "steps": [
+        "t_ascending_aorta",
+        "t_aortic_arch",
+        "t_thoracic_aorta",
+        "t_abdominal_aorta",
+        "t_aortic_bifurcation",
+        "t_common_iliac_artery"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_brain",
+      "title": "Кровь к мозгу — правая сторона",
+      "steps": [
+        "t_aortic_arch",
+        "t_brachiocephalic_trunk",
+        "t_common_carotid_artery",
+        "t_internal_carotid_artery",
+        "t_brain"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": "Слева общая сонная артерия отходит прямо от дуги — этот путь только для правой стороны."
+    },
+    {
+      "id": "p_arm",
+      "title": "Кровь к запястью",
+      "steps": [
+        "t_subclavian_artery",
+        "t_axillary_artery",
+        "t_brachial_artery",
+        "t_radial_artery"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_leg",
+      "title": "Кровь к стопе",
+      "steps": [
+        "t_common_iliac_artery",
+        "t_external_iliac_artery",
+        "t_femoral_artery",
+        "t_popliteal_artery",
+        "t_anterior_tibial_artery",
+        "t_dorsalis_pedis_artery"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_head_venous",
+      "title": "Кровь от головы к сердцу",
+      "steps": [
+        "t_internal_jugular_vein",
+        "t_brachiocephalic_vein",
+        "t_superior_vena_cava",
+        "t_right_atrium"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_portal",
+      "title": "Кровь от селезёнки через печень",
+      "steps": [
+        "t_splenic_vein",
+        "t_portal_vein",
+        "t_liver",
+        "t_hepatic_veins",
+        "t_inferior_vena_cava"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_micro",
+      "title": "Через микроциркуляторное русло",
+      "steps": [
+        "t_arteriole",
+        "t_precapillary_sphincter",
+        "t_capillary",
+        "t_postcapillary_venule",
+        "t_venule"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_face_artery",
+      "title": "Кровь к углу глаза по лицевой артерии",
+      "steps": [
+        "t_common_carotid_artery",
+        "t_external_carotid_artery",
+        "t_facial_artery",
+        "t_angular_artery"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_forehead",
+      "title": "Кровь ко лбу от внутренней сонной",
+      "steps": [
+        "t_internal_carotid_artery",
+        "t_ophthalmic_artery",
+        "t_supraorbital_artery"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_face_venous",
+      "title": "Отток крови от угла глаза",
+      "steps": [
+        "t_angular_vein",
+        "t_facial_vein",
+        "t_internal_jugular_vein",
+        "t_brachiocephalic_vein"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_danger",
+      "title": "Путь инфекции с лица в череп",
+      "steps": [
+        "t_angular_vein",
+        "t_superior_ophthalmic_vein",
+        "t_cavernous_sinus"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_cheek_sensation",
+      "title": "Прикосновение к щеке: путь импульса",
+      "steps": [
+        "t_infraorbital_nerve",
+        "t_maxillary_nerve",
+        "t_trigeminal_nerve"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_blink",
+      "title": "Команда зажмуриться",
+      "steps": [
+        "t_facial_nerve",
+        "t_zygomatic_branches",
+        "t_orbicularis_oculi"
+      ],
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    }
+  ]
+}

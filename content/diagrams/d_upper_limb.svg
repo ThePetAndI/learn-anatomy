@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" data-diagram="d_upper_limb">
+  <title>Артерии правой руки (вид спереди)</title>
+  <!--
+    Правая рука спереди, ладонь вперёд: большой палец — снаружи, на рисунке
+    слева; туловище — справа. Подключичная артерия под ключицей
+    до наружного края первого ребра, дальше подмышечная, плечевая —
+    по внутренней стороне плеча. В локтевой ямке плечевая делится:
+    лучевая — к большому пальцу (на рисунке левее), локтевая — к мизинцу.
+  -->
+  <path class="outline" d="M360 20H300C240 18 180 30 160 70C148 100 150 140 156 180L150 320C146 360 140 440 142 530C130 560 124 600 140 630H232C248 600 246 560 236 530C242 440 248 360 252 320L262 190C268 160 290 140 320 136H360Z"/>
+  <path class="landmark" d="M340 40C290 44 240 50 196 58"/>
+
+  <g data-term="t_subclavian_artery">
+    <path class="hit" stroke-width="48" d="M352 50C320 56 284 62 250 72"/>
+    <path class="vessel-oxy" stroke-width="10" d="M352 50C320 56 284 62 250 72"/>
+  </g>
+  <g data-term="t_axillary_artery">
+    <path class="hit" stroke-width="48" d="M250 72C236 100 222 130 214 160"/>
+    <path class="vessel-oxy" stroke-width="9" d="M250 72C236 100 222 130 214 160"/>
+  </g>
+  <g data-term="t_brachial_artery">
+    <path class="hit" stroke-width="48" d="M214 160C224 200 226 250 220 290C216 306 210 320 202 332"/>
+    <path class="vessel-oxy" stroke-width="8" d="M214 160C224 200 226 250 220 290C216 306 210 320 202 332"/>
+  </g>
+  <g data-term="t_radial_artery">
+    <path class="hit" stroke-width="48" d="M202 332C186 370 168 420 160 470C156 500 154 530 152 562"/>
+    <path class="vessel-oxy" stroke-width="6" d="M202 332C186 370 168 420 160 470C156 500 154 530 152 562"/>
+  </g>
+  <g data-term="t_ulnar_artery">
+    <path class="hit" stroke-width="48" d="M202 332C214 370 226 420 228 470C228 500 226 530 222 566"/>
+    <path class="vessel-oxy" stroke-width="6" d="M202 332C214 370 226 420 228 470C228 500 226 530 222 566"/>
+  </g>
+</svg>

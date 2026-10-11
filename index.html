@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F4EFE6" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Тренажёр анатомии: термины кровеносной и нервной систем парами английский — русский. Работает без сети." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Анатомия" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <title>Анатомия — кровеносная и нервная системы</title>
+    <style>
+      /* Критичный минимум: заставка видна до загрузки CSS-бандла. */
+      html, body { margin: 0; height: 100%; background: #f4efe6; }
+      #boot {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: grid;
+        place-items: center;
+        background: #f4efe6;
+        color: #22201c;
+        transition: opacity 360ms ease;
+      }
+      #boot.is-gone { opacity: 0; pointer-events: none; }
+      .boot__mark { display: block; width: 72px; height: 72px; margin: 0 auto 14px; }
+      .boot__title { font: 600 26px/1.2 Georgia, 'Times New Roman', serif; text-align: center; }
+      .boot__sub { margin-top: 6px; font: 400 14px/1.4 system-ui, sans-serif; color: #6b665c; text-align: center; }
+      .boot__error { max-width: 320px; padding: 24px; font: 400 15px/1.5 system-ui, sans-serif; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="boot">
+      <div>
+        <svg class="boot__mark" viewBox="0 0 512 512" aria-hidden="true">
+          <g fill="none" stroke="#b3261e" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke-width="46" d="M200 440V300C200 170 340 170 340 300V440" />
+            <path stroke-width="26" d="M222 227 214 165M214 165C200 140 170 128 140 124M214 165 206 78M270 203 274 78M318 227C330 160 360 135 392 130" />
+          </g>
+        </svg>
+        <div class="boot__title">Анатомия</div>
+        <div class="boot__sub">кровеносная и нервная системы</div>
+      </div>
+    </div>
+    <noscript>
+      <div style="padding: 24px; font: 400 16px/1.5 system-ui; text-align: center">
+        Для работы нужен JavaScript. Включите его в настройках браузера.
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

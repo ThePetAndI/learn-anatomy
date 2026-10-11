@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" data-diagram="d_face_arteries">
+  <title>Артерии лица (вид справа)</title>
+  <!--
+    Голова справа, лицо обращено вправо. Ориентиры пунктиром: ухо, глазница,
+    скуловая дуга, край нижней челюсти. Наружная сонная поднимается позади
+    ветви челюсти и делится на поверхностную височную (вверх впереди уха;
+    от неё вперёд под скуловой дугой — поперечная артерия лица)
+    и верхнечелюстную (вглубь — пунктиром; её ветвь подглазничная выходит
+    на лицо через подглазничное отверстие). Лицевая артерия перегибается
+    через край челюсти, отдаёт нижнюю и верхнюю губные и кончается угловой
+    у внутреннего угла глаза. Глазная артерия — в глубине глазницы (пунктир),
+    её ветвь надглазничная выходит на лоб.
+  -->
+  <path class="outline" d="M150 20C80 24 38 80 38 160C38 220 56 262 84 290C96 330 92 380 90 420H238C236 392 236 368 244 350C268 346 288 344 298 340C312 334 318 324 316 312C314 300 310 294 312 288C322 282 324 272 316 266C324 258 326 248 316 240C314 232 314 226 318 222C332 218 342 210 338 200C330 186 312 168 300 156C302 146 304 138 298 128C298 96 286 62 256 42C228 24 190 18 150 20Z"/>
+  <path class="landmark" d="M146 186C130 186 124 206 128 224C132 242 144 254 156 250C166 246 168 232 160 222C168 210 164 190 146 186Z"/>
+  <path class="landmark" d="M180 244C182 276 186 304 194 322C222 334 262 342 298 342"/>
+  <path class="landmark" d="M176 222C204 214 232 210 258 206"/>
+  <circle class="landmark" cx="268" cy="150" r="22"/>
+
+  <g data-term="t_eyeball" data-hit="area">
+    <circle class="hit hit-area" cx="268" cy="150" r="24"/>
+    <circle class="organ" cx="268" cy="150" r="12"/>
+  </g>
+
+  <!-- наружная сонная и её ветви -->
+  <g data-term="t_external_carotid_artery">
+    <path class="hit" stroke-width="48" d="M206 420C204 384 198 340 192 302C188 278 186 260 184 244"/>
+    <path class="vessel-oxy" stroke-width="8" d="M206 420C204 384 198 340 192 302C188 278 186 260 184 244"/>
+  </g>
+  <g data-term="t_maxillary_artery">
+    <path class="hit" stroke-width="48" d="M184 244C204 248 224 242 240 232"/>
+    <path class="vessel-oxy behind" stroke-width="6" d="M184 244C204 248 224 242 240 232"/>
+  </g>
+  <g data-term="t_infraorbital_artery">
+    <path class="hit" stroke-width="48" d="M240 232C252 220 262 206 270 196C276 204 280 214 284 224"/>
+    <path class="vessel-oxy behind" stroke-width="4" d="M240 232C252 220 262 206 270 196"/>
+    <path class="vessel-oxy" stroke-width="4" d="M270 196C276 204 280 214 284 224"/>
+  </g>
+  <g data-term="t_superficial_temporal_artery">
+    <path class="hit" stroke-width="48" d="M184 244C182 214 180 186 182 156C184 126 196 98 214 76"/>
+    <path class="vessel-oxy" stroke-width="5" d="M184 244C182 214 180 186 182 156C184 126 196 98 214 76"/>
+  </g>
+  <g data-term="t_transverse_facial_artery">
+    <path class="hit" stroke-width="48" d="M183 230C206 226 232 226 258 230"/>
+    <path class="vessel-oxy" stroke-width="3.5" d="M183 230C206 226 232 226 258 230"/>
+  </g>
+  <g data-term="t_facial_artery">
+    <path class="hit" stroke-width="48" d="M198 334C214 350 230 350 238 340C254 318 272 296 290 278C298 260 300 244 298 224"/>
+    <path class="vessel-oxy" stroke-width="5" d="M198 334C214 350 230 350 238 340C254 318 272 296 290 278C298 260 300 244 298 224"/>
+  </g>
+  <g data-term="t_inferior_labial_artery">
+    <path class="hit" stroke-width="48" d="M284 286C296 289 308 288 320 284"/>
+    <path class="vessel-oxy" stroke-width="3.5" d="M284 286C296 289 308 288 320 284"/>
+  </g>
+  <g data-term="t_superior_labial_artery">
+    <path class="hit" stroke-width="48" d="M294 262C302 254 312 250 322 248"/>
+    <path class="vessel-oxy" stroke-width="3.5" d="M294 262C302 254 312 250 322 248"/>
+  </g>
+  <g data-term="t_angular_artery">
+    <path class="hit" stroke-width="48" d="M298 224C296 202 292 182 286 162"/>
+    <path class="vessel-oxy" stroke-width="3.5" d="M298 224C296 202 292 182 286 162"/>
+  </g>
+
+  <!-- от внутренней сонной: глазная артерия в глазнице и надглазничная -->
+  <g data-term="t_ophthalmic_artery">
+    <path class="hit" stroke-width="48" d="M222 160C236 154 248 150 258 146"/>
+    <path class="vessel-oxy behind" stroke-width="5" d="M222 160C236 154 248 150 258 146"/>
+  </g>
+  <g data-term="t_supraorbital_artery">
+    <path class="hit" stroke-width="48" d="M266 136C270 126 274 118 276 106C278 88 278 70 276 52"/>
+    <path class="vessel-oxy" stroke-width="3.5" d="M266 136C270 126 274 118 276 106C278 88 278 70 276 52"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" data-diagram="d_microcirculation">
+  <title>Микроциркуляторное русло (схема)</title>
+  <!--
+    Слева направо по току крови: артериола, прекапиллярные сфинктеры
+    у начала капилляров, сеть капилляров, посткапиллярная венула, где
+    капилляры сливаются, и венула. Внизу — артериоло-венулярный анастомоз:
+    кровь из артериолы сразу в венулу, в обход капилляров.
+  -->
+  <g data-term="t_arteriole">
+    <path class="hit" stroke-width="48" d="M0 150H112"/>
+    <path class="vessel-oxy" stroke-width="14" d="M0 150H112"/>
+  </g>
+  <g data-term="t_arteriovenous_anastomosis">
+    <path class="hit" stroke-width="48" d="M80 150C90 230 270 240 296 160"/>
+    <path class="vessel-oxy" stroke-width="7" d="M80 150C90 230 270 240 296 160"/>
+  </g>
+  <g data-term="t_capillary" data-hit="area">
+    <rect class="hit hit-area" x="128" y="70" width="118" height="160"/>
+    <path class="cap" stroke-width="3" d="M112 150C130 110 156 92 186 92C216 92 238 110 252 150M112 150H252M112 150C130 190 156 208 186 208C216 208 238 190 252 150M150 100C160 118 162 134 160 150M186 92V208M220 100C212 118 210 134 212 150M160 150C162 166 160 182 150 200M212 150C210 166 212 184 220 200"/>
+  </g>
+  <g data-term="t_precapillary_sphincter" data-hit="area">
+    <rect class="hit hit-area" x="104" y="96" width="48" height="108"/>
+    <circle class="muscle" cx="126" cy="122" r="5"/>
+    <circle class="muscle" cx="128" cy="150" r="5"/>
+    <circle class="muscle" cx="126" cy="178" r="5"/>
+  </g>
+  <g data-term="t_postcapillary_venule">
+    <path class="hit" stroke-width="48" d="M252 150H296"/>
+    <path class="vessel-deoxy" stroke-width="10" d="M252 150H296"/>
+  </g>
+  <g data-term="t_venule">
+    <path class="hit" stroke-width="48" d="M296 150H360"/>
+    <path class="vessel-deoxy" stroke-width="16" d="M296 150H360"/>
+  </g>
+</svg>

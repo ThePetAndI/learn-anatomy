@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" data-diagram="d_veins">
+  <title>Крупные вены туловища (схема)</title>
+  <!--
+    Вид спереди, правая сторона тела слева; середина — x = 180.
+    Внутренняя яремная и подключичная вены сливаются в плечеголовную;
+    плечеголовных две, левая длиннее и идёт косо. Вместе они дают верхнюю
+    полую вену — она справа от середины. Наружная яремная — снаружи
+    от внутренней, впадает в подключичную. Нижняя полая — справа от аорты
+    (аорта пунктиром, без подписи); в неё впадают печёночные вены под
+    диафрагмой и почечные; левая почечная длиннее и проходит впереди аорты.
+    Внизу нижнюю полую образуют общие подвздошные вены.
+  -->
+  <!-- сердце и аорта — ориентиры -->
+  <path class="outline" d="M150 206C112 222 110 272 152 296C198 320 262 302 274 264C282 228 254 202 220 200C196 199 172 198 150 206Z"/>
+  <path class="vessel-oxy behind" stroke-width="12" d="M198 330V560"/>
+  <path class="landmark" d="M60 330C120 316 240 316 300 330"/>
+
+  <!-- шея и плечеголовные вены -->
+  <g data-term="t_internal_jugular_vein">
+    <path class="hit" stroke-width="48" d="M112 8C114 44 116 78 118 110"/>
+    <path class="vessel-deoxy" stroke-width="10" d="M112 8C114 44 116 78 118 110"/>
+  </g>
+  <g data-term="t_internal_jugular_vein">
+    <path class="hit" stroke-width="48" d="M250 8C248 40 246 70 244 100"/>
+    <path class="vessel-deoxy" stroke-width="10" d="M250 8C248 40 246 70 244 100"/>
+  </g>
+  <g data-term="t_external_jugular_vein">
+    <path class="hit" stroke-width="48" d="M76 16C76 50 78 82 80 114"/>
+    <path class="vessel-deoxy" stroke-width="5" d="M76 16C76 50 78 82 80 114"/>
+  </g>
+  <g data-term="t_external_jugular_vein">
+    <path class="hit" stroke-width="48" d="M284 16C284 46 284 76 282 104"/>
+    <path class="vessel-deoxy" stroke-width="5" d="M284 16C284 46 284 76 282 104"/>
+  </g>
+  <g data-term="t_subclavian_vein">
+    <path class="hit" stroke-width="48" d="M14 124C50 118 86 114 118 110"/>
+    <path class="vessel-deoxy" stroke-width="10" d="M14 124C50 118 86 114 118 110"/>
+  </g>
+  <g data-term="t_subclavian_vein">
+    <path class="hit" stroke-width="48" d="M346 114C312 106 278 102 244 100"/>
+    <path class="vessel-deoxy" stroke-width="10" d="M346 114C312 106 278 102 244 100"/>
+  </g>
+  <g data-term="t_brachiocephalic_vein">
+    <path class="hit" stroke-width="48" d="M118 110C134 120 148 134 158 150"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M118 110C134 120 148 134 158 150"/>
+  </g>
+  <g data-term="t_brachiocephalic_vein">
+    <path class="hit" stroke-width="48" d="M244 100C214 112 184 128 158 150"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M244 100C214 112 184 128 158 150"/>
+  </g>
+  <g data-term="t_superior_vena_cava">
+    <path class="hit" stroke-width="48" d="M158 150V220"/>
+    <path class="vessel-deoxy" stroke-width="16" d="M158 150V220"/>
+  </g>
+
+  <!-- печень и почки -->
+  <g data-term="t_liver" data-hit="area">
+    <path class="organ" d="M40 352C60 334 130 330 186 340C204 344 206 356 196 366C176 386 138 404 100 410C70 414 44 404 36 388C30 376 32 362 40 352Z"/>
+  </g>
+  <g data-term="t_kidney" data-hit="area">
+    <path class="organ" d="M108 420C86 420 78 446 80 464C82 486 92 502 110 502C124 502 130 490 126 476C122 464 124 450 130 440C134 430 124 420 108 420Z"/>
+  </g>
+  <g data-term="t_kidney" data-hit="area">
+    <path class="organ" d="M268 406C290 406 298 432 296 450C294 472 284 488 266 488C252 488 246 476 250 462C254 450 252 436 246 426C242 416 252 406 268 406Z"/>
+  </g>
+
+  <!-- нижняя полая вена и её притоки -->
+  <g data-term="t_inferior_vena_cava">
+    <path class="hit" stroke-width="48" d="M162 300V560"/>
+    <path class="vessel-deoxy" stroke-width="16" d="M162 300V560"/>
+  </g>
+  <g data-term="t_hepatic_veins">
+    <path class="hit" stroke-width="48" d="M104 372C126 360 144 350 160 342M136 386C146 370 154 358 162 346M186 370C178 360 170 352 164 346"/>
+    <path class="vessel-deoxy" stroke-width="5" d="M104 372C126 360 144 350 160 342M136 386C146 370 154 358 162 346M186 370C178 360 170 352 164 346"/>
+  </g>
+  <g data-term="t_renal_vein">
+    <path class="hit" stroke-width="48" d="M128 456C140 452 150 450 162 448"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M128 456C140 452 150 450 162 448"/>
+  </g>
+  <g data-term="t_renal_vein">
+    <path class="hit" stroke-width="48" d="M250 442C226 440 196 440 162 444"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M250 442C226 440 196 440 162 444"/>
+  </g>
+  <g data-term="t_common_iliac_vein">
+    <path class="hit" stroke-width="48" d="M162 560C150 584 138 608 126 634"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M162 560C150 584 138 608 126 634"/>
+  </g>
+  <g data-term="t_common_iliac_vein">
+    <path class="hit" stroke-width="48" d="M162 560C182 584 204 608 222 634"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M162 560C182 584 204 608 222 634"/>
+  </g>
+</svg>

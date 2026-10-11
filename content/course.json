@@ -1,0 +1,752 @@
+{
+  "sections": [
+    {
+      "id": "s_circ_overview",
+      "system": "circulatory",
+      "title": "Как устроена кровеносная система",
+      "lessons": [
+        {
+          "id": "l_circ_whole",
+          "title": "Система целиком",
+          "rules": [
+            "r_roots",
+            "r_diagrams"
+          ],
+          "terms": [
+            "t_cardiovascular_system",
+            "t_heart",
+            "t_blood_vessel"
+          ]
+        },
+        {
+          "id": "l_circ_arteries",
+          "title": "Артерии и капилляры",
+          "terms": [
+            "t_artery",
+            "t_aorta",
+            "t_capillary"
+          ]
+        },
+        {
+          "id": "l_circ_veins",
+          "title": "Вены",
+          "rules": [
+            "r_direction",
+            "r_superior_inferior"
+          ],
+          "terms": [
+            "t_vein",
+            "t_atrium",
+            "t_superior_vena_cava"
+          ]
+        },
+        {
+          "id": "l_circ_systemic",
+          "title": "Большой круг",
+          "rules": [
+            "r_circulation"
+          ],
+          "terms": [
+            "t_ventricle",
+            "t_inferior_vena_cava",
+            "t_systemic_circulation"
+          ]
+        },
+        {
+          "id": "l_circ_lungs",
+          "title": "Сосуды лёгких",
+          "rules": [
+            "r_pulmonary"
+          ],
+          "terms": [
+            "t_lung",
+            "t_pulmonary_trunk",
+            "t_pulmonary_arteries",
+            "t_venous_blood"
+          ]
+        },
+        {
+          "id": "l_circ_pulmonary",
+          "title": "Малый круг",
+          "terms": [
+            "t_pulmonary_veins",
+            "t_pulmonary_circulation",
+            "t_arterial_blood"
+          ]
+        },
+        {
+          "id": "l_circ_two_circuits",
+          "title": "Два круга: в чём разница",
+          "rules": [
+            "r_blood_vs_vessel"
+          ],
+          "terms": [],
+          "review": [
+            "t_systemic_circulation",
+            "t_pulmonary_circulation",
+            "t_arterial_blood",
+            "t_venous_blood",
+            "t_superior_vena_cava",
+            "t_inferior_vena_cava",
+            "t_pulmonary_arteries",
+            "t_pulmonary_veins"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_heart",
+      "system": "circulatory",
+      "title": "Сердце",
+      "lessons": [
+        {
+          "id": "l_heart_right",
+          "title": "Правые камеры",
+          "rules": [
+            "r_patient_sides"
+          ],
+          "terms": [
+            "t_right_atrium",
+            "t_right_ventricle",
+            "t_tricuspid_valve"
+          ]
+        },
+        {
+          "id": "l_heart_left",
+          "title": "Левые камеры",
+          "terms": [
+            "t_left_atrium",
+            "t_left_ventricle",
+            "t_mitral_valve"
+          ]
+        },
+        {
+          "id": "l_heart_outflow",
+          "title": "Клапаны на выходе",
+          "rules": [
+            "r_valves",
+            "r_inter"
+          ],
+          "terms": [
+            "t_pulmonary_valve",
+            "t_aortic_valve",
+            "t_interatrial_septum"
+          ]
+        },
+        {
+          "id": "l_heart_wall",
+          "title": "Стенка сердца",
+          "terms": [
+            "t_interventricular_septum",
+            "t_myocardium",
+            "t_apex_of_heart"
+          ]
+        },
+        {
+          "id": "l_heart_review",
+          "title": "Сердце: что где",
+          "terms": [],
+          "review": [
+            "t_right_atrium",
+            "t_left_atrium",
+            "t_right_ventricle",
+            "t_left_ventricle",
+            "t_tricuspid_valve",
+            "t_mitral_valve",
+            "t_interatrial_septum",
+            "t_interventricular_septum"
+          ]
+        },
+        {
+          "id": "l_heart_coronary_right",
+          "title": "Венечная борозда",
+          "rules": [
+            "r_coronary"
+          ],
+          "terms": [
+            "t_coronary_sulcus",
+            "t_right_coronary_artery",
+            "t_coronary_sinus"
+          ]
+        },
+        {
+          "id": "l_heart_coronary_left",
+          "title": "Левая венечная артерия",
+          "terms": [
+            "t_left_coronary_artery",
+            "t_anterior_interventricular_branch",
+            "t_circumflex_branch",
+            "t_epicardium"
+          ]
+        },
+        {
+          "id": "l_heart_conduction",
+          "title": "Проводящая система",
+          "rules": [
+            "r_conduction"
+          ],
+          "terms": [
+            "t_conducting_system_of_heart",
+            "t_sinoatrial_node",
+            "t_atrioventricular_node"
+          ]
+        },
+        {
+          "id": "l_heart_conduction_end",
+          "title": "Пучок и волокна",
+          "terms": [
+            "t_atrioventricular_bundle",
+            "t_purkinje_fibers",
+            "t_endocardium"
+          ]
+        },
+        {
+          "id": "l_heart_paths",
+          "title": "Пути крови и импульса",
+          "terms": [],
+          "paths": [
+            "p_right_heart",
+            "p_left_heart",
+            "p_conduction"
+          ],
+          "review": [
+            "t_right_coronary_artery",
+            "t_left_coronary_artery",
+            "t_atrioventricular_node",
+            "t_atrioventricular_bundle",
+            "t_epicardium",
+            "t_endocardium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_aorta",
+      "system": "circulatory",
+      "title": "Аорта и её ветви",
+      "lessons": [
+        {
+          "id": "l_aorta_arch",
+          "title": "Восходящая часть и дуга",
+          "rules": [
+            "r_aorta_parts"
+          ],
+          "terms": [
+            "t_ascending_aorta",
+            "t_aortic_arch",
+            "t_brachiocephalic_trunk"
+          ]
+        },
+        {
+          "id": "l_aorta_arch_branches",
+          "title": "Ветви дуги",
+          "rules": [
+            "r_right_only"
+          ],
+          "terms": [
+            "t_common_carotid_artery",
+            "t_subclavian_artery",
+            "t_descending_aorta"
+          ]
+        },
+        {
+          "id": "l_aorta_parts",
+          "title": "Грудная и брюшная части",
+          "rules": [
+            "r_supplies"
+          ],
+          "terms": [
+            "t_thoracic_aorta",
+            "t_abdominal_aorta",
+            "t_renal_artery",
+            "t_kidney"
+          ]
+        },
+        {
+          "id": "l_aorta_celiac",
+          "title": "Чревный ствол",
+          "terms": [
+            "t_celiac_trunk",
+            "t_stomach",
+            "t_liver",
+            "t_spleen"
+          ]
+        },
+        {
+          "id": "l_aorta_sma",
+          "title": "Верхняя брыжеечная артерия",
+          "rules": [
+            "r_mesenteric"
+          ],
+          "terms": [
+            "t_superior_mesenteric_artery",
+            "t_small_intestine",
+            "t_common_iliac_artery"
+          ]
+        },
+        {
+          "id": "l_aorta_ima",
+          "title": "Нижняя брыжеечная и бифуркация",
+          "terms": [
+            "t_inferior_mesenteric_artery",
+            "t_large_intestine",
+            "t_aortic_bifurcation"
+          ]
+        },
+        {
+          "id": "l_aorta_review",
+          "title": "Аорта целиком",
+          "terms": [],
+          "paths": [
+            "p_aorta"
+          ],
+          "review": [
+            "t_ascending_aorta",
+            "t_descending_aorta",
+            "t_superior_mesenteric_artery",
+            "t_inferior_mesenteric_artery",
+            "t_small_intestine",
+            "t_large_intestine",
+            "t_celiac_trunk",
+            "t_renal_artery"
+          ]
+        }
+      ],
+      "relations": true
+    },
+    {
+      "id": "s_arteries",
+      "system": "circulatory",
+      "title": "Артерии головы, шеи, конечностей и органов",
+      "lessons": [
+        {
+          "id": "l_art_carotid_internal",
+          "title": "Сонные артерии и мозг",
+          "rules": [
+            "r_carotid"
+          ],
+          "terms": [
+            "t_internal_carotid_artery",
+            "t_vertebral_artery",
+            "t_brain"
+          ]
+        },
+        {
+          "id": "l_art_carotid_external",
+          "title": "Наружная сонная",
+          "terms": [
+            "t_external_carotid_artery",
+            "t_facial_artery",
+            "t_superficial_temporal_artery"
+          ]
+        },
+        {
+          "id": "l_art_arm",
+          "title": "Артерии руки",
+          "rules": [
+            "r_limb_names"
+          ],
+          "terms": [
+            "t_axillary_artery",
+            "t_brachial_artery",
+            "t_radial_artery",
+            "t_ulnar_artery"
+          ]
+        },
+        {
+          "id": "l_art_thigh",
+          "title": "Бедро и подколенная ямка",
+          "rules": [
+            "r_leg_names"
+          ],
+          "terms": [
+            "t_external_iliac_artery",
+            "t_femoral_artery",
+            "t_popliteal_artery",
+            "t_posterior_tibial_artery"
+          ]
+        },
+        {
+          "id": "l_art_pelvis_foot",
+          "title": "Таз и стопа",
+          "terms": [
+            "t_internal_iliac_artery",
+            "t_anterior_tibial_artery",
+            "t_dorsalis_pedis_artery"
+          ]
+        },
+        {
+          "id": "l_art_celiac_branches",
+          "title": "Ветви чревного ствола",
+          "terms": [
+            "t_left_gastric_artery",
+            "t_common_hepatic_artery",
+            "t_splenic_artery"
+          ]
+        },
+        {
+          "id": "l_art_review",
+          "title": "Пути артериальной крови",
+          "terms": [],
+          "paths": [
+            "p_brain",
+            "p_arm",
+            "p_leg"
+          ],
+          "review": [
+            "t_internal_carotid_artery",
+            "t_external_carotid_artery",
+            "t_internal_iliac_artery",
+            "t_external_iliac_artery",
+            "t_anterior_tibial_artery",
+            "t_posterior_tibial_artery"
+          ]
+        }
+      ],
+      "relations": true
+    },
+    {
+      "id": "s_veins",
+      "system": "circulatory",
+      "title": "Вены",
+      "lessons": [
+        {
+          "id": "l_veins_svc",
+          "title": "Притоки верхней полой вены",
+          "rules": [
+            "r_brachiocephalic_veins"
+          ],
+          "terms": [
+            "t_brachiocephalic_vein",
+            "t_internal_jugular_vein",
+            "t_subclavian_vein"
+          ]
+        },
+        {
+          "id": "l_veins_ivc",
+          "title": "Притоки нижней полой вены",
+          "terms": [
+            "t_common_iliac_vein",
+            "t_renal_vein",
+            "t_hepatic_veins"
+          ]
+        },
+        {
+          "id": "l_veins_portal",
+          "title": "Воротная вена",
+          "rules": [
+            "r_portal"
+          ],
+          "terms": [
+            "t_portal_vein",
+            "t_splenic_vein",
+            "t_superior_mesenteric_vein"
+          ]
+        },
+        {
+          "id": "l_veins_arm",
+          "title": "Поверхностные вены",
+          "rules": [
+            "r_superficial_deep"
+          ],
+          "terms": [
+            "t_external_jugular_vein",
+            "t_cephalic_vein",
+            "t_basilic_vein",
+            "t_median_cubital_vein"
+          ]
+        },
+        {
+          "id": "l_veins_leg",
+          "title": "Вены бедра",
+          "terms": [
+            "t_great_saphenous_vein",
+            "t_femoral_vein",
+            "t_venous_valve"
+          ]
+        },
+        {
+          "id": "l_veins_calf",
+          "title": "Вены голени",
+          "terms": [
+            "t_small_saphenous_vein",
+            "t_popliteal_vein",
+            "t_perforating_veins"
+          ]
+        },
+        {
+          "id": "l_veins_review",
+          "title": "Пути венозной крови",
+          "terms": [],
+          "paths": [
+            "p_head_venous",
+            "p_portal"
+          ],
+          "review": [
+            "t_internal_jugular_vein",
+            "t_external_jugular_vein",
+            "t_great_saphenous_vein",
+            "t_small_saphenous_vein",
+            "t_portal_vein",
+            "t_hepatic_veins"
+          ]
+        }
+      ],
+      "relations": true
+    },
+    {
+      "id": "s_micro",
+      "system": "circulatory",
+      "title": "Микроциркуляция",
+      "lessons": [
+        {
+          "id": "l_micro_vessels",
+          "title": "Артериолы и венулы",
+          "rules": [
+            "r_micro"
+          ],
+          "terms": [
+            "t_microcirculation",
+            "t_arteriole",
+            "t_venule"
+          ]
+        },
+        {
+          "id": "l_micro_links",
+          "title": "Звенья русла",
+          "terms": [
+            "t_precapillary_sphincter",
+            "t_postcapillary_venule",
+            "t_arteriovenous_anastomosis"
+          ]
+        },
+        {
+          "id": "l_micro_review",
+          "title": "Путь через русло",
+          "terms": [],
+          "paths": [
+            "p_micro"
+          ],
+          "review": [
+            "t_arteriole",
+            "t_venule",
+            "t_capillary",
+            "t_precapillary_sphincter",
+            "t_postcapillary_venule",
+            "t_arteriovenous_anastomosis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_face_blood",
+      "system": "circulatory",
+      "title": "Кровоснабжение лица",
+      "relations": true,
+      "lessons": [
+        {
+          "id": "l_face_art_facial",
+          "title": "Ветви на лице",
+          "rules": [
+            "r_face_supply"
+          ],
+          "terms": [
+            "t_superior_labial_artery",
+            "t_angular_artery",
+            "t_transverse_facial_artery"
+          ]
+        },
+        {
+          "id": "l_face_art_deep",
+          "title": "Глубокие ветви",
+          "rules": [
+            "r_supra_infra"
+          ],
+          "terms": [
+            "t_maxillary_artery",
+            "t_infraorbital_artery",
+            "t_inferior_labial_artery"
+          ]
+        },
+        {
+          "id": "l_face_art_internal",
+          "title": "От внутренней сонной",
+          "terms": [
+            "t_ophthalmic_artery",
+            "t_supraorbital_artery",
+            "t_eyeball"
+          ]
+        },
+        {
+          "id": "l_face_veins",
+          "title": "Вены лица",
+          "terms": [
+            "t_facial_vein",
+            "t_retromandibular_vein",
+            "t_pterygoid_plexus"
+          ]
+        },
+        {
+          "id": "l_face_danger",
+          "title": "Опасный треугольник",
+          "rules": [
+            "r_danger_triangle"
+          ],
+          "terms": [
+            "t_angular_vein",
+            "t_superior_ophthalmic_vein",
+            "t_cavernous_sinus"
+          ]
+        },
+        {
+          "id": "l_face_blood_review",
+          "title": "Лицо: пути крови",
+          "terms": [],
+          "paths": [
+            "p_face_artery",
+            "p_forehead",
+            "p_face_venous",
+            "p_danger"
+          ],
+          "review": [
+            "t_superior_labial_artery",
+            "t_inferior_labial_artery",
+            "t_angular_artery",
+            "t_angular_vein",
+            "t_supraorbital_artery",
+            "t_infraorbital_artery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_ns_overview",
+      "system": "nervous",
+      "title": "Как устроена нервная система",
+      "lessons": []
+    },
+    {
+      "id": "s_brain",
+      "system": "nervous",
+      "title": "Головной мозг",
+      "lessons": []
+    },
+    {
+      "id": "s_spinal_cord",
+      "system": "nervous",
+      "title": "Спинной мозг",
+      "lessons": []
+    },
+    {
+      "id": "s_cranial",
+      "system": "nervous",
+      "title": "Черепные нервы",
+      "lessons": []
+    },
+    {
+      "id": "s_spinal_nerves",
+      "system": "nervous",
+      "title": "Спинномозговые нервы и сплетения",
+      "lessons": []
+    },
+    {
+      "id": "s_autonomic",
+      "system": "nervous",
+      "title": "Вегетативная нервная система",
+      "lessons": []
+    },
+    {
+      "id": "s_face_nerves",
+      "system": "nervous",
+      "title": "Иннервация лица",
+      "relations": true,
+      "lessons": [
+        {
+          "id": "l_face_v1",
+          "title": "Тройничный нерв",
+          "rules": [
+            "r_face_two_nerves"
+          ],
+          "terms": [
+            "t_trigeminal_nerve",
+            "t_ophthalmic_nerve",
+            "t_supraorbital_nerve"
+          ]
+        },
+        {
+          "id": "l_face_v2",
+          "title": "Верхнечелюстной нерв",
+          "terms": [
+            "t_maxillary_nerve",
+            "t_infraorbital_nerve",
+            "t_infraorbital_foramen"
+          ]
+        },
+        {
+          "id": "l_face_v3",
+          "title": "Нижнечелюстной нерв",
+          "rules": [
+            "r_mental"
+          ],
+          "terms": [
+            "t_mandibular_nerve",
+            "t_inferior_alveolar_nerve",
+            "t_mental_nerve",
+            "t_mental_foramen"
+          ]
+        },
+        {
+          "id": "l_face_vii",
+          "title": "Лицевой нерв",
+          "rules": [
+            "r_facial_nerve"
+          ],
+          "terms": [
+            "t_facial_nerve",
+            "t_parotid_gland",
+            "t_masseter"
+          ]
+        },
+        {
+          "id": "l_face_vii_upper",
+          "title": "Ветви к глазу",
+          "terms": [
+            "t_temporal_branches",
+            "t_zygomatic_branches",
+            "t_cervical_branch",
+            "t_orbicularis_oculi"
+          ]
+        },
+        {
+          "id": "l_face_vii_lower",
+          "title": "Ветви ко рту",
+          "terms": [
+            "t_buccal_branches",
+            "t_marginal_mandibular_branch",
+            "t_buccinator",
+            "t_orbicularis_oris"
+          ]
+        },
+        {
+          "id": "l_face_nerves_review",
+          "title": "Лицо: какой нерв что делает",
+          "terms": [],
+          "paths": [
+            "p_cheek_sensation",
+            "p_blink"
+          ],
+          "review": [
+            "t_maxillary_nerve",
+            "t_mandibular_nerve",
+            "t_supraorbital_nerve",
+            "t_infraorbital_nerve",
+            "t_masseter",
+            "t_buccinator",
+            "t_orbicularis_oculi",
+            "t_facial_nerve"
+          ]
+        }
+      ]
+    }
+  ]
+}

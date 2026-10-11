@@ -1,0 +1,77 @@
+/* Палитра и размеры. Все цвета — только отсюда. */
+:root {
+  /* ——— бумага и чернила ——— */
+  --paper: #f4efe6;
+  --surface: #fbf9f4;
+  --surface-2: #efe8db;
+  --hairline: #dcd3c3;
+  --ink: #22201c;
+  --ink-2: #57524a;
+  --ink-3: #8a8478;
+  --ink-4: #bdb5a6;
+
+  /* ——— атласная традиция: артерии красные, вены синие, нервы жёлтые ——— */
+  --artery: #b3261e;
+  --artery-soft: #f2dcd7;
+  --vein: #24589c;
+  --vein-soft: #dbe5f1;
+  --nerve: #d4a106;
+  --nerve-ink: #7a5c00;
+  --nerve-soft: #f5e8bd;
+  /* капилляр и сосуд вообще — между красным и синим */
+  --vessel: #7a4a86;
+  --organ: #8a7a63;
+
+  /* ——— схемы: ткани приглушённые, сосуды — в цвет крови ——— */
+  --muscle: #c98a78;
+  --muscle-edge: #8f5646;
+  --septum: #a5604f;
+  --lung: #ead7cf;
+  --lung-edge: #a88b80;
+  --valve: #fbf6ea;
+  --valve-edge: #57524a;
+  --bed: #efe8db;
+  /* проводящая система сердца — не жёлтая: жёлтый занят нервами */
+  --conduct: #2c7a6b;
+  --body: #f7f2ea;
+  /* зоны чувствительности ветвей тройничного нерва — три оттенка жёлтого */
+  --zone-1: #f7eccb;
+  --zone-2: #f1e0ac;
+  --zone-3: #e9d28c;
+  --structure: #6b665c;
+
+  /* ——— обратная связь: не красная, чтобы не спорить с артериями ——— */
+  --good: #2f6a47;
+  --good-soft: #e1ece2;
+  --bad: #9a3d12;
+  --bad-soft: #f5e1d5;
+  /* те же, но на тёмной всплывашке */
+  --good-on-ink: #9fd3b0;
+  --bad-on-ink: #f0b49a;
+  --scrim: rgba(34, 32, 28, 0.42);
+
+  /* ——— шрифты ——— */
+  --serif: 'Literata', Georgia, 'Times New Roman', serif;
+  --sans: 'Golos Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* ——— геометрия ——— */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --gutter: 20px;
+  --tab-h: 60px;
+  --tap: 48px;
+
+  /* ——— тени: едва заметные, бумага не парит ——— */
+  --shadow-sheet: 0 -6px 24px rgba(34, 32, 28, 0.1);
+  --shadow-pop: 0 12px 36px rgba(34, 32, 28, 0.22);
+
+  /* ——— тайминги ——— */
+  --t-fast: 140ms;
+  --t-mid: 240ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* ——— безопасные зоны ——— */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+}

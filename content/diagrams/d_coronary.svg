@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" data-diagram="d_coronary">
+  <title>Венечные артерии (вид спереди)</title>
+  <!--
+    Передняя поверхность сердца, правая сторона тела слева.
+    Венечная борозда идёт косо: от корня аорты вниз по правому краю,
+    между правым предсердием и правым желудочком; её левая часть уходит
+    под лёгочный ствол. Правая венечная артерия лежит в правой части
+    борозды. Левая венечная проходит позади лёгочного ствола и делится
+    на переднюю межжелудочковую ветвь (к верхушке) и огибающую (влево
+    по борозде). Венечный синус — на задней поверхности, здесь не виден.
+  -->
+
+  <!-- сердце: поверхность, борозда и артерии на ней -->
+  <g data-term="t_heart" data-hit="area">
+    <path class="muscle" d="M100 132C70 152 60 210 72 262C86 316 140 362 232 392C256 398 276 388 282 366C298 306 306 236 296 178C290 146 270 128 244 124L130 120C118 120 108 126 100 132Z"/>
+    <g data-term="t_coronary_sulcus">
+      <path class="hit" stroke-width="48" d="M286 186C262 170 232 160 200 160C166 166 136 206 118 246C108 268 100 292 94 316"/>
+      <path class="groove" d="M286 186C262 170 232 160 200 160C166 166 136 206 118 246C108 268 100 292 94 316"/>
+    </g>
+    <g data-term="t_right_coronary_artery">
+      <path class="hit" stroke-width="48" d="M190 160C162 168 136 206 118 246C108 268 100 292 96 318"/>
+      <path class="vessel-oxy" stroke-width="7" d="M190 160C162 168 136 206 118 246C108 268 100 292 96 318"/>
+    </g>
+    <g data-term="t_left_coronary_artery">
+      <path class="hit" stroke-width="48" d="M204 158C216 162 226 166 236 174"/>
+      <path class="vessel-oxy" stroke-width="8" d="M204 158C216 162 226 166 236 174"/>
+    </g>
+    <g data-term="t_anterior_interventricular_branch">
+      <path class="hit" stroke-width="48" d="M236 174C240 234 250 306 266 376"/>
+      <path class="vessel-oxy" stroke-width="6" d="M236 174C240 234 250 306 266 376"/>
+    </g>
+    <g data-term="t_circumflex_branch">
+      <path class="hit" stroke-width="48" d="M236 174C254 176 272 182 292 196"/>
+      <path class="vessel-oxy" stroke-width="6" d="M236 174C254 176 272 182 292 196"/>
+    </g>
+  </g>
+
+  <!-- аорта: корень между предсердиями, восходящая часть и дуга -->
+  <g data-term="t_aorta">
+    <path class="hit" stroke-width="48" d="M194 160C190 126 178 92 190 64C206 34 268 32 290 60C300 74 302 90 302 108"/>
+    <path class="vessel-oxy" stroke-width="28" d="M194 160C190 126 178 92 190 64C206 34 268 32 290 60C300 74 302 90 302 108"/>
+  </g>
+
+  <!-- лёгочный ствол — из правого желудочка, впереди аорты и левой венечной артерии -->
+  <g data-term="t_pulmonary_trunk">
+    <path class="hit" stroke-width="48" d="M226 196C228 162 240 122 254 96"/>
+    <path class="vessel-deoxy" stroke-width="24" d="M226 196C228 162 240 122 254 96"/>
+  </g>
+</svg>

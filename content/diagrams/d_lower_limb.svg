@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 700" data-diagram="d_lower_limb">
+  <title>Артерии правой ноги (вид спереди)</title>
+  <!--
+    Правая нога спереди: наружная сторона слева, середина тела справа.
+    Брюшная аорта делится на общие подвздошные; правая — на внутреннюю
+    (в малый таз, к середине) и наружную, которая под паховой связкой
+    (пунктир) становится бедренной. Внизу бедра бедренная уходит назад
+    и становится подколенной — она позади колена, поэтому пунктиром.
+    Передняя большеберцовая выходит на переднюю сторону голени (снаружи),
+    задняя — по задней стороне (пунктиром) к внутренней лодыжке.
+    Тыльная артерия стопы продолжает переднюю большеберцовую.
+  -->
+  <path class="outline" d="M340 20C260 20 170 40 140 90C120 130 126 200 136 260C146 330 150 380 152 430C150 500 160 580 168 630L160 690H250C246 670 236 650 232 630C240 580 248 500 248 430C252 380 262 300 268 240C272 210 290 190 340 180Z"/>
+  <path class="landmark" d="M140 178C190 186 250 196 300 210"/>
+
+  <g data-term="t_abdominal_aorta">
+    <path class="hit" stroke-width="48" d="M320 0V40"/>
+    <path class="vessel-oxy" stroke-width="15" d="M320 0V40"/>
+  </g>
+  <g data-term="t_common_iliac_artery">
+    <path class="hit" stroke-width="48" d="M320 40C304 64 284 88 262 110"/>
+    <path class="vessel-oxy" stroke-width="11" d="M320 40C304 64 284 88 262 110"/>
+  </g>
+  <g data-term="t_common_iliac_artery">
+    <path class="hit" stroke-width="48" d="M320 40C332 58 342 76 352 96"/>
+    <path class="vessel-oxy" stroke-width="11" d="M320 40C332 58 342 76 352 96"/>
+  </g>
+  <g data-term="t_internal_iliac_artery">
+    <path class="hit" stroke-width="48" d="M262 110C268 140 274 172 288 210"/>
+    <path class="vessel-oxy" stroke-width="8" d="M262 110C268 140 274 172 288 210"/>
+  </g>
+  <g data-term="t_external_iliac_artery">
+    <path class="hit" stroke-width="48" d="M262 110C248 136 234 162 222 192"/>
+    <path class="vessel-oxy" stroke-width="10" d="M262 110C248 136 234 162 222 192"/>
+  </g>
+  <g data-term="t_femoral_artery">
+    <path class="hit" stroke-width="48" d="M222 192C214 240 214 300 222 350C224 364 226 378 228 390"/>
+    <path class="vessel-oxy" stroke-width="9" d="M222 192C214 240 214 300 222 350C224 364 226 378 228 390"/>
+  </g>
+  <g data-term="t_popliteal_artery">
+    <path class="hit" stroke-width="48" d="M228 390C222 420 212 446 204 470"/>
+    <path class="vessel-oxy behind" stroke-width="8" d="M228 390C222 420 212 446 204 470"/>
+  </g>
+  <g data-term="t_posterior_tibial_artery">
+    <path class="hit" stroke-width="48" d="M204 470C214 500 220 540 220 590C220 610 222 624 226 640"/>
+    <path class="vessel-oxy behind" stroke-width="6" d="M204 470C214 500 220 540 220 590C220 610 222 624 226 640"/>
+  </g>
+  <g data-term="t_anterior_tibial_artery">
+    <path class="hit" stroke-width="48" d="M204 470C194 476 186 486 184 500C182 540 184 590 194 636"/>
+    <path class="vessel-oxy" stroke-width="6" d="M204 470C194 476 186 486 184 500C182 540 184 590 194 636"/>
+  </g>
+  <g data-term="t_dorsalis_pedis_artery">
+    <path class="hit" stroke-width="48" d="M194 636C198 654 202 672 208 690"/>
+    <path class="vessel-oxy" stroke-width="5" d="M194 636C198 654 202 672 208 690"/>
+  </g>
+</svg>

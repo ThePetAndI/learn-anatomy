@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 600" data-diagram="d_circulation">
+  <title>Круги кровообращения (схема)</title>
+  <!--
+    Схема, а не рисунок с натуры: вид спереди, правая сторона тела слева.
+    Сверху — капилляры верхней части тела, снизу — нижней, по бокам — лёгкие.
+    Цвет — по крови: лёгочный ствол и лёгочные артерии синие, лёгочные вены красные.
+    Порядок слоёв повторяет порядок спереди назад: правая лёгочная артерия
+    и правые лёгочные вены проходят позади верхней полой вены и аорты,
+    лёгочный ствол лежит впереди аорты.
+  -->
+
+  <!-- капилляры верхней и нижней частей тела -->
+  <g data-term="t_capillary" data-hit="area">
+    <rect class="bed" x="120" y="28" width="120" height="44" rx="10"/>
+    <path class="cap" d="M130 40c15-6 30 6 45 0s30-6 45 0 M130 50c15 6 30-6 45 0s30 6 45 0 M130 60c15-6 30 6 45 0s30-6 45 0 M146 34v32 M166 34v32 M186 34v32 M206 34v32 M224 34v32"/>
+  </g>
+  <g data-term="t_capillary" data-hit="area">
+    <rect class="bed" x="120" y="528" width="120" height="44" rx="10"/>
+    <path class="cap" d="M130 540c15-6 30 6 45 0s30-6 45 0 M130 550c15 6 30-6 45 0s30 6 45 0 M130 560c15-6 30 6 45 0s30-6 45 0 M146 534v32 M166 534v32 M186 534v32 M206 534v32 M224 534v32"/>
+  </g>
+
+  <!-- лёгкие с капиллярами малого круга -->
+  <g data-term="t_lung" data-hit="area">
+    <path class="organ" d="M90 126C58 126 26 168 22 228C20 262 32 280 54 280H86C94 280 98 274 98 266V136C98 130 95 126 90 126Z"/>
+    <g data-term="t_capillary" data-hit="area">
+      <ellipse class="bed" cx="62" cy="208" rx="24" ry="30"/>
+      <path class="cap" d="M44 196c8-5 16 5 24 0s10-4 12-2 M42 208c8 5 16-5 24 0s12 4 14 2 M44 220c8-5 16 5 24 0s10-4 12-2 M54 182v52 M64 180v56 M74 184v48"/>
+    </g>
+  </g>
+  <g data-term="t_lung" data-hit="area">
+    <path class="organ" d="M270 126C302 126 334 168 338 228C340 262 328 280 306 280H274C266 280 262 274 262 266V136C262 130 265 126 270 126Z"/>
+    <g data-term="t_capillary" data-hit="area">
+      <ellipse class="bed" cx="298" cy="208" rx="24" ry="30"/>
+      <path class="cap" d="M280 196c8-5 16 5 24 0s10-4 12-2 M278 208c8 5 16-5 24 0s12 4 14 2 M280 220c8-5 16 5 24 0s10-4 12-2 M288 182v52 M298 180v56 M308 184v48"/>
+    </g>
+  </g>
+
+  <!-- позади: правая лёгочная артерия и правые лёгочные вены -->
+  <g data-term="t_pulmonary_arteries">
+    <path class="hit" stroke-width="48" d="M212 256C180 246 120 230 76 214"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M212 256C180 246 120 230 76 214"/>
+  </g>
+  <g data-term="t_pulmonary_veins">
+    <path class="hit" stroke-width="48" d="M72 236C112 256 168 264 196 300"/>
+    <path class="vessel-oxy" stroke-width="7" d="M72 236C112 256 168 264 196 300"/>
+  </g>
+
+  <!-- полые вены -->
+  <g data-term="t_superior_vena_cava">
+    <path class="hit" stroke-width="48" d="M140 72V298"/>
+    <path class="vessel-deoxy" stroke-width="11" d="M140 72V298"/>
+  </g>
+  <g data-term="t_inferior_vena_cava">
+    <path class="hit" stroke-width="48" d="M140 528V454C140 440 104 444 104 420V346C104 334 112 330 124 330"/>
+    <path class="vessel-deoxy" stroke-width="12" d="M140 528V454C140 440 104 444 104 420V346C104 334 112 330 124 330"/>
+  </g>
+
+  <!-- сердце: стенка, четыре камеры -->
+  <g data-term="t_heart" data-hit="area">
+    <path class="muscle" d="M136 290H224C236 290 244 298 244 310V404C244 424 230 436 210 436H150C130 436 116 424 116 404V310C116 298 124 290 136 290Z"/>
+    <g data-term="t_atrium" data-hit="area">
+      <rect class="cavity-deoxy" x="126" y="300" width="52" height="52" rx="8"/>
+    </g>
+    <g data-term="t_atrium" data-hit="area">
+      <rect class="cavity-oxy" x="182" y="300" width="52" height="52" rx="8"/>
+    </g>
+    <g data-term="t_ventricle" data-hit="area">
+      <rect class="cavity-deoxy" x="126" y="358" width="52" height="68" rx="10"/>
+    </g>
+    <g data-term="t_ventricle" data-hit="area">
+      <rect class="cavity-oxy" x="182" y="358" width="52" height="68" rx="10"/>
+    </g>
+  </g>
+
+  <!-- аорта из левого желудочка: восходящая часть, дуга, нисходящая — к нижней части тела -->
+  <path class="vessel-oxy" stroke-width="8" d="M211 120V72"/>
+  <g data-term="t_aorta">
+    <path class="hit" stroke-width="48" d="M196 368C190 340 172 318 170 286V150C170 108 252 108 252 150V500C252 516 240 522 228 528"/>
+    <path class="vessel-oxy" stroke-width="12" d="M196 368C190 340 172 318 170 286V150C170 108 252 108 252 150V500C252 516 240 522 228 528"/>
+  </g>
+
+  <!-- левые лёгочные вены — впереди нисходящей аорты -->
+  <g data-term="t_pulmonary_veins">
+    <path class="hit" stroke-width="48" d="M288 236C266 252 242 270 230 292"/>
+    <path class="vessel-oxy" stroke-width="7" d="M288 236C266 252 242 270 230 292"/>
+  </g>
+
+  <!-- лёгочный ствол из правого желудочка, впереди аорты; левая лёгочная артерия -->
+  <g data-term="t_pulmonary_trunk">
+    <path class="hit" stroke-width="48" d="M164 370C170 334 196 300 212 256"/>
+    <path class="vessel-deoxy" stroke-width="11" d="M164 370C170 334 196 300 212 256"/>
+  </g>
+  <g data-term="t_pulmonary_arteries">
+    <path class="hit" stroke-width="48" d="M212 256C240 248 260 232 284 214"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M212 256C240 248 260 232 284 214"/>
+  </g>
+</svg>

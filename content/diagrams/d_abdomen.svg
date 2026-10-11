@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" data-diagram="d_abdomen">
+  <title>Артерии органов живота (схема)</title>
+  <!--
+    Вид спереди: печень справа у человека (на рисунке слева), желудок
+    и селезёнка — слева (на рисунке справа). Брюшная аорта позади органов.
+    Чревный ствол делится на три: левая желудочная — вверх к малой кривизне
+    желудка, общая печёночная — вправо к печени, селезёночная — извилисто
+    влево к селезёнке. Верхняя брыжеечная — к тонкой кишке, нижняя
+    брыжеечная — к левой половине толстой. Толстая кишка обрамляет тонкую.
+  -->
+
+  <!-- органы -->
+  <g data-term="t_liver" data-hit="area">
+    <path class="organ" d="M24 70C40 40 110 30 170 40C196 44 208 56 200 70C186 96 150 130 110 150C80 164 46 170 32 154C18 138 14 98 24 70Z"/>
+  </g>
+  <g data-term="t_spleen" data-hit="area">
+    <path class="organ" d="M312 60C334 62 348 84 346 112C344 140 330 160 312 158C298 156 296 140 300 120C304 100 300 82 302 70C304 64 306 60 312 60Z"/>
+  </g>
+  <g data-term="t_stomach" data-hit="area">
+    <path class="organ" d="M226 52C252 46 284 58 292 86C300 116 292 152 270 176C248 198 214 204 192 196C178 190 178 176 192 172C214 166 236 150 244 126C250 108 244 94 232 86C220 78 210 60 226 52Z"/>
+  </g>
+  <g data-term="t_small_intestine" data-hit="area">
+    <path class="organ" d="M110 270C140 250 240 250 262 274C282 300 280 380 252 404C222 428 140 428 112 404C86 380 82 294 110 270Z"/>
+    <path class="line" d="M124 300C150 288 176 312 202 300C226 290 246 304 254 320M120 340C146 330 170 352 198 340C224 330 244 344 258 358M124 380C150 372 176 392 204 380C228 372 242 384 250 392"/>
+  </g>
+  <g data-term="t_large_intestine">
+    <path class="hit" stroke-width="48" d="M76 430V250C76 232 90 226 106 226H270C288 226 300 236 300 254V430C300 456 270 470 230 466C214 464 202 470 196 480"/>
+    <path class="tube" stroke-width="30" d="M76 430V250C76 232 90 226 106 226H270C288 226 300 236 300 254V430C300 456 270 470 230 466C214 464 202 470 196 480"/>
+  </g>
+
+  <!-- аорта лежит позади органов — поэтому пунктиром; её ветви идут вперёд, к органам -->
+  <g data-term="t_abdominal_aorta">
+    <path class="hit" stroke-width="48" d="M190 110V500"/>
+    <path class="vessel-oxy behind" stroke-width="15" d="M190 110V500"/>
+  </g>
+
+  <!-- чревный ствол и его ветви -->
+  <g data-term="t_celiac_trunk">
+    <path class="hit" stroke-width="48" d="M190 150L192 176"/>
+    <path class="vessel-oxy" stroke-width="9" d="M190 150L192 176"/>
+  </g>
+  <g data-term="t_left_gastric_artery">
+    <path class="hit" stroke-width="48" d="M192 176C204 158 214 140 226 118"/>
+    <path class="vessel-oxy" stroke-width="5" d="M192 176C204 158 214 140 226 118"/>
+  </g>
+  <g data-term="t_common_hepatic_artery">
+    <path class="hit" stroke-width="48" d="M192 176C168 174 140 160 116 142"/>
+    <path class="vessel-oxy" stroke-width="6" d="M192 176C168 174 140 160 116 142"/>
+  </g>
+  <g data-term="t_splenic_artery">
+    <path class="hit" stroke-width="48" d="M192 176C214 186 232 170 252 180C272 190 284 168 304 132"/>
+    <path class="vessel-oxy" stroke-width="6" d="M192 176C214 186 232 170 252 180C272 190 284 168 304 132"/>
+  </g>
+
+  <!-- брыжеечные артерии -->
+  <g data-term="t_superior_mesenteric_artery">
+    <path class="hit" stroke-width="48" d="M190 206C182 240 174 280 170 330M176 276C160 290 146 304 136 324M174 300C190 316 206 330 226 344"/>
+    <path class="vessel-oxy" stroke-width="6" d="M190 206C182 240 174 280 170 330M176 276C160 290 146 304 136 324M174 300C190 316 206 330 226 344"/>
+  </g>
+  <g data-term="t_inferior_mesenteric_artery">
+    <path class="hit" stroke-width="48" d="M190 400C218 404 250 410 286 418"/>
+    <path class="vessel-oxy" stroke-width="5" d="M190 400C218 404 250 410 286 418"/>
+  </g>
+</svg>

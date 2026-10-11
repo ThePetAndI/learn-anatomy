@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" data-diagram="d_portal">
+  <title>Воротная вена (схема)</title>
+  <!--
+    Вид спереди: печень справа у человека (на рисунке слева), селезёнка —
+    слева (на рисунке справа). Селезёночная вена идёт вправо, верхняя
+    брыжеечная — вверх от кишки; позади поджелудочной железы они сливаются
+    в воротную вену, и та поднимается к воротам печени и ветвится в ней.
+    Из печени кровь уходит по печёночным венам в нижнюю полую вену —
+    она позади печени и впереди неё не видна, поэтому пунктиром.
+  -->
+  <!-- органы -->
+  <g data-term="t_liver" data-hit="area">
+    <path class="organ" d="M22 70C40 30 120 18 190 30C222 36 236 52 226 70C210 100 166 136 118 156C84 170 44 172 30 154C14 134 12 98 22 70Z"/>
+  </g>
+  <g data-term="t_spleen" data-hit="area">
+    <path class="organ" d="M310 150C334 152 348 176 346 206C344 236 328 256 310 254C296 252 294 236 298 216C302 196 298 176 300 162C302 156 304 150 310 150Z"/>
+  </g>
+  <g data-term="t_small_intestine" data-hit="area">
+    <path class="organ" d="M108 340C140 320 240 320 262 344C282 370 280 440 252 462C222 480 140 480 112 462C86 440 82 364 108 340Z"/>
+    <path class="line" d="M122 370C148 358 174 382 200 370C224 360 244 374 252 390M120 410C146 400 170 422 198 410C224 400 244 414 256 428"/>
+  </g>
+
+  <!-- нижняя полая вена позади печени и печёночные вены -->
+  <g data-term="t_inferior_vena_cava">
+    <path class="hit" stroke-width="48" d="M170 0V300"/>
+    <path class="vessel-deoxy behind" stroke-width="16" d="M170 0V300"/>
+  </g>
+  <g data-term="t_hepatic_veins">
+    <path class="hit" stroke-width="48" d="M110 70C132 56 150 46 166 40M140 92C150 72 158 58 168 46M206 70C192 58 180 50 172 44"/>
+    <path class="vessel-deoxy" stroke-width="6" d="M110 70C132 56 150 46 166 40M140 92C150 72 158 58 168 46M206 70C192 58 180 50 172 44"/>
+  </g>
+
+  <!-- воротная вена и её корни -->
+  <g data-term="t_splenic_vein">
+    <path class="hit" stroke-width="48" d="M300 206C270 214 240 228 198 250"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M300 206C270 214 240 228 198 250"/>
+  </g>
+  <g data-term="t_superior_mesenteric_vein">
+    <path class="hit" stroke-width="48" d="M184 400C186 360 190 300 196 252"/>
+    <path class="vessel-deoxy" stroke-width="8" d="M184 400C186 360 190 300 196 252"/>
+  </g>
+  <g data-term="t_portal_vein">
+    <path class="hit" stroke-width="48" d="M198 250C184 220 158 182 130 142"/>
+    <path class="vessel-deoxy" stroke-width="13" d="M198 250C184 220 158 182 130 142M130 142C116 126 98 112 76 104M130 142C134 122 136 104 136 88"/>
+  </g>
+</svg>
