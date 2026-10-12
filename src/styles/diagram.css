@@ -45,6 +45,24 @@
 .anat .zone-2 { fill: var(--zone-2); stroke: none; }
 .anat .zone-3 { fill: var(--zone-3); stroke: none; }
 .anat .tube { fill: none; stroke: var(--lung); stroke-linecap: round; stroke-linejoin: round; }
+/* нервная система: ткань мозга, доли, борозды, серое и белое вещество */
+.anat .brain { fill: var(--brain); stroke: var(--brain-edge); stroke-width: 1.5; }
+.anat .lobe-1 { fill: var(--lobe-1); stroke: var(--brain-edge); stroke-width: 1.2; }
+.anat .lobe-2 { fill: var(--lobe-2); stroke: var(--brain-edge); stroke-width: 1.2; }
+.anat .lobe-3 { fill: var(--lobe-3); stroke: var(--brain-edge); stroke-width: 1.2; }
+.anat .lobe-4 { fill: var(--lobe-4); stroke: var(--brain-edge); stroke-width: 1.2; }
+/* толщина борозды и оболочки — в stroke-width самой фигуры */
+.anat .sulcus { fill: none; stroke: var(--sulcus); stroke-linecap: round; stroke-linejoin: round; }
+.anat .grey { fill: var(--grey-matter); stroke: var(--grey-edge); stroke-width: 1.2; }
+.anat .white { fill: var(--white-matter); stroke: var(--brain-edge); stroke-width: 1.5; }
+.anat .bone { fill: var(--bone); stroke: var(--bone-edge); stroke-width: 1.5; }
+.anat .membrane { fill: none; stroke: var(--membrane); stroke-linecap: round; stroke-linejoin: round; }
+.anat .fluid { fill: var(--fluid); stroke: none; }
+.anat .sheet-1 { fill: var(--sheet-1); stroke: var(--membrane); stroke-width: 1.5; }
+.anat .sheet-2 { fill: var(--sheet-2); stroke: var(--membrane); stroke-width: 1.2; }
+/* нейрон: тело клетки и миелиновые муфты аксона */
+.anat .soma { fill: var(--nerve-soft); stroke: var(--nerve-ink); stroke-width: 1.5; }
+.anat .myelin { fill: var(--myelin); stroke: var(--nerve-ink); stroke-width: 1.2; }
 /* сосуд позади — пунктиром: глубокая вена, подколенная артерия на виде спереди */
 .anat .behind { stroke-dasharray: 8 6; stroke-linecap: butt; }
 

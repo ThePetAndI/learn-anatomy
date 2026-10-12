@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 340" data-diagram="d_brain_medial">
+  <title>Головной мозг: срединный разрез</title>
+  <!--
+    Правая половина мозга, вид со стороны разреза: лоб слева, затылок
+    справа — как на схеме полушария снаружи.
+    Внутренняя поверхность полушария — это кора (с бороздами без подписи).
+    Над промежуточным мозгом дугой — мозолистое тело. Таламус под ним,
+    гипоталамус — ниже и впереди таламуса; впереди ножки гипофиза —
+    зрительный перекрёст, под ней сам гипофиз. Позади таламуса, под задним
+    концом мозолистого тела, — шишковидное тело.
+    Ствол сверху вниз: средний мозг, мост (выпуклый спереди), продолговатый
+    мозг, ниже — спинной мозг. Позади моста — четвёртый желудочек (без
+    подписи) и мозжечок.
+    Структуры промежуточного мозга на схеме крупнее, чем в жизни.
+  -->
+  <g data-term="t_cerebrum">
+    <g data-term="t_cerebral_cortex" data-hit="area">
+      <path class="brain" d="M36 128C34 76 92 30 170 26C250 22 312 66 322 128C326 156 314 178 296 186C276 190 252 182 232 172C216 166 200 168 180 170C150 172 126 172 104 172C76 172 50 160 40 146C37 140 36 134 36 128Z"/>
+      <path class="sulcus" stroke-width="1.5" d="M80 146C72 106 108 68 170 64C228 60 264 80 272 106M266 48C264 72 258 98 250 126M318 142C296 140 272 134 250 128C244 132 240 138 238 144"/>
+    </g>
+    <g data-term="t_corpus_callosum" data-hit="area">
+      <path class="white" d="M108 136C102 106 132 88 176 86C218 84 248 94 254 118C256 130 250 140 238 138C232 122 214 108 178 108C142 108 128 118 128 134C128 142 122 146 116 145C112 144 109 140 108 136Z"/>
+    </g>
+  </g>
+
+  <!-- четвёртый желудочек -->
+  <path class="fluid" d="M212 206L230 226L212 246Z"/>
+
+  <g data-term="t_cerebellum" data-hit="area">
+    <path class="brain" d="M226 214C234 198 258 192 282 198C304 204 316 222 312 242C308 262 290 270 268 270C246 270 228 260 222 244C220 234 222 222 226 214Z"/>
+    <path class="sulcus" stroke-width="1.2" d="M234 236C250 228 266 222 290 220M232 248C252 244 274 242 302 244M244 260C262 258 280 258 296 256"/>
+  </g>
+
+  <g data-term="t_brainstem">
+    <g data-term="t_midbrain" data-hit="area">
+      <path class="brain" d="M184 158C202 154 220 156 230 166L222 200C208 202 194 202 182 198C180 184 180 170 184 158Z"/>
+    </g>
+    <g data-term="t_pons" data-hit="area">
+      <path class="brain" d="M184 196C196 198 206 198 216 196C218 212 216 228 212 244C200 246 190 246 182 244C170 236 166 220 170 208C174 200 178 197 184 196Z"/>
+    </g>
+    <g data-term="t_medulla_oblongata" data-hit="area">
+      <path class="brain" d="M178 244H216C216 262 214 278 212 292H184C182 278 180 262 178 244Z"/>
+    </g>
+  </g>
+
+  <g data-term="t_spinal_cord">
+    <rect class="hit hit-area" x="174" y="292" width="48" height="48"/>
+    <path class="brain" d="M188 292H208V340H188Z"/>
+  </g>
+
+  <g data-term="t_diencephalon">
+    <g data-term="t_thalamus" data-hit="area">
+      <ellipse class="grey" cx="194" cy="137" rx="32" ry="20"/>
+    </g>
+    <g data-term="t_hypothalamus" data-hit="area">
+      <path class="grey" d="M142 150C156 144 174 148 182 158C186 170 180 182 166 186C152 188 138 180 136 168C135 160 137 154 142 150Z"/>
+    </g>
+    <g data-term="t_pineal_gland">
+      <circle class="hit hit-area" cx="238" cy="152" r="24"/>
+      <ellipse class="organ" cx="236" cy="152" rx="8" ry="5"/>
+    </g>
+  </g>
+
+  <g data-term="t_optic_chiasm">
+    <circle class="hit hit-area" cx="110" cy="188" r="24"/>
+    <path class="nerve" stroke-width="9" d="M98 190L122 184"/>
+  </g>
+  <g data-term="t_pituitary_gland">
+    <circle class="hit hit-area" cx="154" cy="222" r="24"/>
+    <path class="organ" d="M158 186V206"/>
+    <ellipse class="organ" cx="154" cy="216" rx="14" ry="10"/>
+  </g>
+</svg>

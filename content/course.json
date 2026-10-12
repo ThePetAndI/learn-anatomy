@@ -623,37 +623,643 @@
       "id": "s_ns_overview",
       "system": "nervous",
       "title": "Как устроена нервная система",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "l_ns_whole",
+          "title": "Система целиком",
+          "rules": [
+            "r_neuro"
+          ],
+          "terms": [
+            "t_nervous_system",
+            "t_central_nervous_system",
+            "t_spinal_cord"
+          ],
+          "review": [
+            "t_brain"
+          ]
+        },
+        {
+          "id": "l_ns_peripheral",
+          "title": "Периферическая часть",
+          "rules": [
+            "r_cns_pns"
+          ],
+          "terms": [
+            "t_peripheral_nervous_system",
+            "t_nerve",
+            "t_ganglion"
+          ]
+        },
+        {
+          "id": "l_ns_neuron",
+          "title": "Нейрон",
+          "rules": [
+            "r_impulse"
+          ],
+          "terms": [
+            "t_neuron",
+            "t_dendrite",
+            "t_cell_body",
+            "t_axon"
+          ]
+        },
+        {
+          "id": "l_ns_fiber",
+          "title": "Миелин и синапс",
+          "terms": [
+            "t_myelin_sheath",
+            "t_synapse",
+            "t_effector"
+          ],
+          "paths": [
+            "p_neuron_signal"
+          ]
+        },
+        {
+          "id": "l_ns_sensory",
+          "title": "Чувствительный нейрон",
+          "rules": [
+            "r_afferent"
+          ],
+          "terms": [
+            "t_receptor",
+            "t_sensory_neuron",
+            "t_interneuron"
+          ]
+        },
+        {
+          "id": "l_ns_motor",
+          "title": "Двигательный нейрон",
+          "rules": [
+            "r_reflex"
+          ],
+          "terms": [
+            "t_motor_neuron",
+            "t_reflex_arc",
+            "t_somatic_nervous_system"
+          ]
+        },
+        {
+          "id": "l_ns_review",
+          "title": "Путь импульса",
+          "terms": [],
+          "paths": [
+            "p_reflex_arc"
+          ],
+          "review": [
+            "t_central_nervous_system",
+            "t_peripheral_nervous_system",
+            "t_sensory_neuron",
+            "t_motor_neuron",
+            "t_dendrite",
+            "t_axon",
+            "t_receptor",
+            "t_effector"
+          ]
+        }
+      ]
     },
     {
       "id": "s_brain",
       "system": "nervous",
       "title": "Головной мозг",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "l_brain_parts",
+          "title": "Три отдела",
+          "rules": [
+            "r_cerebellum"
+          ],
+          "terms": [
+            "t_cerebrum",
+            "t_cerebellum",
+            "t_brainstem"
+          ],
+          "review": [
+            "t_brain"
+          ]
+        },
+        {
+          "id": "l_brain_hemispheres",
+          "title": "Полушария",
+          "terms": [
+            "t_cerebral_hemisphere",
+            "t_cerebral_cortex",
+            "t_corpus_callosum"
+          ]
+        },
+        {
+          "id": "l_brain_lobes",
+          "title": "Доли",
+          "rules": [
+            "r_lobes"
+          ],
+          "terms": [
+            "t_frontal_lobe",
+            "t_parietal_lobe",
+            "t_occipital_lobe"
+          ]
+        },
+        {
+          "id": "l_brain_folds",
+          "title": "Борозды и извилины",
+          "rules": [
+            "r_gyrus"
+          ],
+          "terms": [
+            "t_sulcus",
+            "t_gyrus",
+            "t_central_sulcus"
+          ]
+        },
+        {
+          "id": "l_brain_motor",
+          "title": "Двигательная кора и височная доля",
+          "terms": [
+            "t_precentral_gyrus",
+            "t_temporal_lobe",
+            "t_lateral_sulcus"
+          ]
+        },
+        {
+          "id": "l_brain_sensory",
+          "title": "Чувствительная кора",
+          "rules": [
+            "r_pre_post"
+          ],
+          "terms": [
+            "t_postcentral_gyrus",
+            "t_internal_capsule",
+            "t_insula"
+          ]
+        },
+        {
+          "id": "l_brain_diencephalon",
+          "title": "Промежуточный мозг",
+          "terms": [
+            "t_diencephalon",
+            "t_thalamus",
+            "t_pineal_gland"
+          ]
+        },
+        {
+          "id": "l_brain_hypothalamus",
+          "title": "Гипоталамус и гипофиз",
+          "rules": [
+            "r_hypo"
+          ],
+          "terms": [
+            "t_hypothalamus",
+            "t_pituitary_gland",
+            "t_optic_chiasm"
+          ]
+        },
+        {
+          "id": "l_brain_stem",
+          "title": "Ствол мозга",
+          "rules": [
+            "r_brainstem"
+          ],
+          "terms": [
+            "t_midbrain",
+            "t_pons",
+            "t_medulla_oblongata"
+          ]
+        },
+        {
+          "id": "l_brain_review",
+          "title": "Пути к коре и от неё",
+          "terms": [],
+          "paths": [
+            "p_motor_path",
+            "p_touch_path"
+          ],
+          "review": [
+            "t_precentral_gyrus",
+            "t_postcentral_gyrus",
+            "t_thalamus",
+            "t_hypothalamus",
+            "t_central_sulcus",
+            "t_lateral_sulcus",
+            "t_frontal_lobe",
+            "t_parietal_lobe"
+          ]
+        }
+      ]
     },
     {
       "id": "s_spinal_cord",
       "system": "nervous",
       "title": "Спинной мозг",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "l_cord_place",
+          "title": "Где лежит спинной мозг",
+          "rules": [
+            "r_segments"
+          ],
+          "terms": [
+            "t_vertebral_canal",
+            "t_spinal_cord_segment",
+            "t_conus_medullaris"
+          ],
+          "review": [
+            "t_spinal_cord"
+          ]
+        },
+        {
+          "id": "l_cord_shape",
+          "title": "Утолщения и конский хвост",
+          "terms": [
+            "t_cervical_enlargement",
+            "t_lumbosacral_enlargement",
+            "t_cauda_equina"
+          ]
+        },
+        {
+          "id": "l_cord_grey",
+          "title": "Серое вещество",
+          "rules": [
+            "r_grey_white"
+          ],
+          "terms": [
+            "t_grey_matter",
+            "t_central_canal",
+            "t_posterior_horn"
+          ]
+        },
+        {
+          "id": "l_cord_white",
+          "title": "Белое вещество и передние рога",
+          "terms": [
+            "t_white_matter",
+            "t_anterior_horn",
+            "t_anterior_root"
+          ]
+        },
+        {
+          "id": "l_cord_roots",
+          "title": "Корешки и нерв",
+          "rules": [
+            "r_root_direction"
+          ],
+          "terms": [
+            "t_posterior_root",
+            "t_spinal_ganglion",
+            "t_spinal_nerve"
+          ]
+        },
+        {
+          "id": "l_cord_meninges",
+          "title": "Оболочки",
+          "rules": [
+            "r_mater"
+          ],
+          "terms": [
+            "t_meninges",
+            "t_dura_mater",
+            "t_arachnoid_mater"
+          ]
+        },
+        {
+          "id": "l_cord_csf",
+          "title": "Спинномозговая жидкость",
+          "terms": [
+            "t_pia_mater",
+            "t_subarachnoid_space",
+            "t_cerebrospinal_fluid"
+          ]
+        },
+        {
+          "id": "l_cord_review",
+          "title": "Спинной мозг: пути и слои",
+          "terms": [],
+          "paths": [
+            "p_sensory_in",
+            "p_motor_out"
+          ],
+          "review": [
+            "t_grey_matter",
+            "t_white_matter",
+            "t_anterior_horn",
+            "t_posterior_horn",
+            "t_anterior_root",
+            "t_posterior_root",
+            "t_dura_mater",
+            "t_pia_mater"
+          ]
+        }
+      ]
     },
     {
       "id": "s_cranial",
       "system": "nervous",
       "title": "Черепные нервы",
-      "lessons": []
+      "relations": true,
+      "lessons": [
+        {
+          "id": "l_cranial_intro",
+          "title": "Двенадцать пар",
+          "rules": [
+            "r_cranial_numbers"
+          ],
+          "terms": [
+            "t_cranial_nerves",
+            "t_olfactory_nerve",
+            "t_optic_nerve"
+          ],
+          "review": [
+            "t_optic_chiasm"
+          ]
+        },
+        {
+          "id": "l_cranial_eye",
+          "title": "Нервы мышц глаза",
+          "rules": [
+            "r_trochlea"
+          ],
+          "terms": [
+            "t_oculomotor_nerve",
+            "t_medial_rectus",
+            "t_trochlear_nerve",
+            "t_superior_oblique"
+          ]
+        },
+        {
+          "id": "l_cranial_v_vi",
+          "title": "Тройничный и отводящий",
+          "rules": [
+            "r_eye_muscles"
+          ],
+          "terms": [
+            "t_trigeminal_nerve",
+            "t_abducent_nerve",
+            "t_lateral_rectus"
+          ]
+        },
+        {
+          "id": "l_cranial_vii_ix",
+          "title": "Лицевой, преддверно-улитковый, языкоглоточный",
+          "rules": [
+            "r_nerve_types"
+          ],
+          "terms": [
+            "t_facial_nerve",
+            "t_vestibulocochlear_nerve",
+            "t_glossopharyngeal_nerve"
+          ]
+        },
+        {
+          "id": "l_cranial_x_xi",
+          "title": "Блуждающий и добавочный",
+          "rules": [
+            "r_vagus"
+          ],
+          "terms": [
+            "t_vagus_nerve",
+            "t_accessory_nerve",
+            "t_sternocleidomastoid"
+          ]
+        },
+        {
+          "id": "l_cranial_xii",
+          "title": "Подъязычный",
+          "terms": [
+            "t_hypoglossal_nerve",
+            "t_tongue",
+            "t_trapezius"
+          ]
+        },
+        {
+          "id": "l_cranial_review",
+          "title": "Двенадцать пар: что куда",
+          "terms": [],
+          "paths": [
+            "p_abduct_eye",
+            "p_tongue_out"
+          ],
+          "review": [
+            "t_oculomotor_nerve",
+            "t_trochlear_nerve",
+            "t_abducent_nerve",
+            "t_glossopharyngeal_nerve",
+            "t_hypoglossal_nerve",
+            "t_vagus_nerve",
+            "t_accessory_nerve",
+            "t_facial_nerve"
+          ]
+        }
+      ]
     },
     {
       "id": "s_spinal_nerves",
       "system": "nervous",
       "title": "Спинномозговые нервы и сплетения",
-      "lessons": []
+      "relations": true,
+      "lessons": [
+        {
+          "id": "l_sn_rami",
+          "title": "Передние ветви",
+          "rules": [
+            "r_plexus"
+          ],
+          "terms": [
+            "t_anterior_ramus",
+            "t_nerve_plexus",
+            "t_intercostal_nerves"
+          ],
+          "review": [
+            "t_spinal_nerve"
+          ]
+        },
+        {
+          "id": "l_sn_cervical",
+          "title": "Шейное сплетение",
+          "rules": [
+            "r_phrenic"
+          ],
+          "terms": [
+            "t_cervical_plexus",
+            "t_phrenic_nerve",
+            "t_diaphragm"
+          ]
+        },
+        {
+          "id": "l_sn_brachial",
+          "title": "Плечевое сплетение",
+          "rules": [
+            "r_brachii"
+          ],
+          "terms": [
+            "t_brachial_plexus",
+            "t_musculocutaneous_nerve",
+            "t_biceps_brachii"
+          ]
+        },
+        {
+          "id": "l_sn_shoulder",
+          "title": "Плечо",
+          "terms": [
+            "t_axillary_nerve",
+            "t_deltoid",
+            "t_radial_nerve",
+            "t_triceps_brachii"
+          ]
+        },
+        {
+          "id": "l_sn_forearm",
+          "title": "Предплечье и кисть",
+          "rules": [
+            "r_same_names"
+          ],
+          "terms": [
+            "t_median_nerve",
+            "t_ulnar_nerve",
+            "t_carpal_tunnel"
+          ]
+        },
+        {
+          "id": "l_sn_lumbar",
+          "title": "Поясничное сплетение",
+          "terms": [
+            "t_lumbar_plexus",
+            "t_femoral_nerve",
+            "t_quadriceps_femoris",
+            "t_obturator_nerve"
+          ]
+        },
+        {
+          "id": "l_sn_sacral",
+          "title": "Крестцовое сплетение",
+          "terms": [
+            "t_sacral_plexus",
+            "t_sciatic_nerve",
+            "t_tibial_nerve"
+          ]
+        },
+        {
+          "id": "l_sn_leg",
+          "title": "Голень",
+          "rules": [
+            "r_fibular"
+          ],
+          "terms": [
+            "t_gastrocnemius",
+            "t_common_fibular_nerve",
+            "t_tibialis_anterior"
+          ]
+        },
+        {
+          "id": "l_sn_review",
+          "title": "От сегмента до мышцы",
+          "terms": [],
+          "paths": [
+            "p_biceps",
+            "p_breath",
+            "p_calf"
+          ],
+          "review": [
+            "t_radial_nerve",
+            "t_ulnar_nerve",
+            "t_median_nerve",
+            "t_axillary_nerve",
+            "t_femoral_nerve",
+            "t_sciatic_nerve",
+            "t_common_fibular_nerve",
+            "t_tibial_nerve"
+          ]
+        }
+      ]
     },
     {
       "id": "s_autonomic",
       "system": "nervous",
       "title": "Вегетативная нервная система",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "l_ans_parts",
+          "title": "Две части",
+          "rules": [
+            "r_autonomic"
+          ],
+          "terms": [
+            "t_autonomic_nervous_system",
+            "t_sympathetic_nervous_system",
+            "t_sympathetic_trunk"
+          ]
+        },
+        {
+          "id": "l_ans_start",
+          "title": "Где начинается симпатический путь",
+          "rules": [
+            "r_two_neurons"
+          ],
+          "terms": [
+            "t_lateral_horn",
+            "t_preganglionic_fiber",
+            "t_white_ramus_communicans"
+          ]
+        },
+        {
+          "id": "l_ans_ganglion",
+          "title": "Узел и после узла",
+          "terms": [
+            "t_autonomic_ganglion",
+            "t_postganglionic_fiber",
+            "t_grey_ramus_communicans"
+          ]
+        },
+        {
+          "id": "l_ans_celiac",
+          "title": "Солнечное сплетение",
+          "rules": [
+            "r_splanchnic"
+          ],
+          "terms": [
+            "t_greater_splanchnic_nerve",
+            "t_celiac_ganglion",
+            "t_celiac_plexus"
+          ]
+        },
+        {
+          "id": "l_ans_parasympathetic",
+          "title": "Парасимпатическая часть",
+          "rules": [
+            "r_craniosacral"
+          ],
+          "terms": [
+            "t_parasympathetic_nervous_system",
+            "t_ciliary_ganglion",
+            "t_pelvic_splanchnic_nerves"
+          ],
+          "review": [
+            "t_vagus_nerve",
+            "t_oculomotor_nerve"
+          ]
+        },
+        {
+          "id": "l_ans_review",
+          "title": "Два пути к органам",
+          "terms": [],
+          "paths": [
+            "p_to_trunk",
+            "p_to_skin",
+            "p_to_gut",
+            "p_pupil"
+          ],
+          "review": [
+            "t_sympathetic_nervous_system",
+            "t_parasympathetic_nervous_system",
+            "t_preganglionic_fiber",
+            "t_postganglionic_fiber",
+            "t_white_ramus_communicans",
+            "t_grey_ramus_communicans",
+            "t_lateral_horn",
+            "t_celiac_plexus"
+          ]
+        }
+      ]
     },
     {
       "id": "s_face_nerves",
@@ -668,9 +1274,12 @@
             "r_face_two_nerves"
           ],
           "terms": [
-            "t_trigeminal_nerve",
+            "t_trigeminal_ganglion",
             "t_ophthalmic_nerve",
             "t_supraorbital_nerve"
+          ],
+          "review": [
+            "t_trigeminal_nerve"
           ]
         },
         {
@@ -702,9 +1311,12 @@
             "r_facial_nerve"
           ],
           "terms": [
-            "t_facial_nerve",
+            "t_stylomastoid_foramen",
             "t_parotid_gland",
             "t_masseter"
+          ],
+          "review": [
+            "t_facial_nerve"
           ]
         },
         {

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" data-diagram="d_reflex_arc">
+  <title>Рефлекторная дуга (схема)</title>
+  <!--
+    Справа вверху — поперечный срез спинного мозга, задняя сторона сверху:
+    серое вещество в виде бабочки, узкие задние рога вверху, широкие
+    передние — внизу. Показана левая половина дуги, правая половина
+    среза без подписей.
+    Путь: рецептор в коже (слева внизу) → чувствительный нейрон в составе
+    нерва; его тело лежит в нервном узле (спинномозговом), центральный
+    отросток входит через задний корешок в задний рог → вставочный нейрон →
+    двигательный нейрон в переднем роге → его аксон выходит передним
+    корешком, идёт в том же нерве → мышца (рабочий орган).
+    Корешки сливаются за узлом в нерв: в нём вместе идут чувствительные
+    и двигательные волокна, ниже они расходятся к коже и к мышце.
+  -->
+  <!-- кожа -->
+  <path class="outline" d="M4 268H58C70 290 70 322 58 352H4Z"/>
+
+  <g data-term="t_spinal_cord" data-hit="area">
+    <ellipse class="white" cx="236" cy="118" rx="80" ry="60"/>
+    <path class="grey" d="M210 70C218 76 226 96 230 108H242C246 96 254 76 262 70C268 74 264 90 258 104C272 110 282 126 280 146C278 162 262 170 250 164C244 158 242 146 240 140H232C230 146 228 158 222 164C210 170 194 162 192 146C190 126 200 110 214 104C208 90 204 74 210 70Z"/>
+    <circle class="fluid" cx="236" cy="124" r="3"/>
+  </g>
+
+  <!-- нерв: общий ствол от слияния корешков до развилки -->
+  <g data-term="t_nerve">
+    <path class="hit" stroke-width="48" d="M108 74C100 98 92 124 86 150"/>
+    <path class="nerve" stroke-width="7" d="M108 74C100 98 92 124 86 150"/>
+  </g>
+
+  <g data-term="t_ganglion">
+    <circle class="hit hit-area" cx="140" cy="57" r="24"/>
+    <ellipse class="grey" cx="140" cy="57" rx="18" ry="12"/>
+  </g>
+
+  <g data-term="t_reflex_arc">
+    <g data-term="t_effector" data-hit="area">
+      <ellipse class="muscle" cx="160" cy="362" rx="56" ry="28"/>
+    </g>
+    <g data-term="t_receptor">
+      <circle class="hit hit-area" cx="34" cy="304" r="24"/>
+      <path class="nerve" stroke-width="2" d="M34 304L24 316M34 304L32 320M34 304L44 316"/>
+      <circle class="soma" cx="34" cy="302" r="5"/>
+    </g>
+    <g data-term="t_sensory_neuron">
+      <path class="hit" stroke-width="48" d="M40 276C54 230 70 190 86 150M164 59C176 63 186 68 196 73C204 77 208 80 212 82"/>
+      <path class="nerve" stroke-width="3" d="M34 296C50 240 70 190 86 150M108 72C116 62 126 58 134 57M146 57C164 58 178 64 188 70C198 74 206 78 212 82"/>
+      <circle class="soma" cx="140" cy="57" r="5"/>
+      <circle class="soma" cx="213" cy="83" r="3"/>
+    </g>
+    <g data-term="t_interneuron">
+      <path class="hit" stroke-width="48" d="M216 90C222 100 224 112 222 122C220 132 214 140 208 146"/>
+      <path class="nerve" stroke-width="2.5" d="M216 88C220 98 222 106 224 111M223 121C220 130 214 140 208 146"/>
+      <circle class="soma" cx="224" cy="116" r="5"/>
+    </g>
+    <g data-term="t_motor_neuron">
+      <path class="hit" stroke-width="48" d="M196 153C186 153 176 152 168 152C140 150 120 116 112 92M92 176C104 220 122 280 146 330"/>
+      <path class="nerve" stroke-width="3" d="M196 153C186 153 176 152 168 152C140 150 116 110 108 76M86 150C96 200 118 270 146 330"/>
+      <circle class="soma" cx="202" cy="152" r="7"/>
+      <circle class="soma" cx="146" cy="334" r="4"/>
+    </g>
+  </g>
+</svg>

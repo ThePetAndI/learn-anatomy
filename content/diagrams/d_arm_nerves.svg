@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" data-diagram="d_arm_nerves">
+  <title>Нервы руки (правая рука спереди)</title>
+  <!--
+    Правая рука спереди, ладонь вперёд: большой палец (латеральная сторона)
+    слева, мизинец справа; туловище — справа за краем руки. Плечевое
+    сплетение спускается с шеи к подмышке, там начинаются его ветви.
+    Мышечно-кожный — латерально, под двуглавой мышцей (пунктир), ниже
+    локтя выходит под кожу. Срединный — по середине передней стороны,
+    через запястный канал (пунктир под связкой) к ладони. Локтевой —
+    по внутренней стороне, позади медиального надмыщелка (пунктир).
+    Лучевой и подмышечный уходят назад: лучевой спиралью огибает плечевую
+    кость сзади (пунктир) и выходит вперёд у латерального надмыщелка,
+    подмышечный огибает шейку плечевой кости под дельтовидной мышцей.
+    Трёхглавая мышца лежит сзади: спереди видны только её края.
+  -->
+  <path class="outline" d="M40 80C40 40 90 20 150 26C190 30 214 52 222 84C226 100 222 112 214 120C206 180 198 250 192 320C190 340 188 350 186 360C184 420 180 480 174 540C172 556 172 566 172 576C180 600 178 630 160 636H100C84 632 80 606 92 576C90 566 88 556 86 540C80 480 74 420 72 360C70 350 68 340 68 320C62 250 52 180 44 130C40 110 40 96 40 80Z"/>
+
+  <g data-term="t_triceps_brachii" data-hit="area">
+    <path class="muscle" d="M180 150C196 172 200 240 194 300L186 312C188 262 188 200 176 160Z"/>
+  </g>
+  <g data-term="t_triceps_brachii" data-hit="area">
+    <path class="muscle" d="M60 186C52 220 54 262 62 302L74 302C70 262 68 222 76 186Z"/>
+  </g>
+  <g data-term="t_biceps_brachii" data-hit="area">
+    <path class="muscle" d="M118 130C136 118 164 120 174 136C180 190 176 250 162 300C154 322 136 326 126 310C114 262 108 196 118 130Z"/>
+  </g>
+  <g data-term="t_deltoid" data-hit="area">
+    <path class="muscle" d="M40 80C40 40 90 20 150 26C164 44 160 80 138 116C118 146 98 168 80 180C64 160 46 120 40 80Z"/>
+  </g>
+  <g data-term="t_carpal_tunnel">
+    <rect class="hit hit-area" x="108" y="536" width="48" height="48"/>
+    <path class="sheet-2" d="M98 552C120 544 146 544 166 552V570C146 562 120 562 98 570Z"/>
+  </g>
+
+  <g data-term="t_brachial_plexus">
+    <path class="hit" stroke-width="48" d="M300 10C270 40 240 70 210 104"/>
+    <path class="nerve" stroke-width="3" d="M290 2C262 34 232 66 208 96M300 10C270 40 240 70 214 100M312 22C280 50 250 80 220 106"/>
+  </g>
+  <g data-term="t_axillary_nerve">
+    <path class="hit" stroke-width="48" d="M196 110C172 118 146 126 120 130C100 132 84 126 72 116"/>
+    <path class="nerve behind" stroke-width="3" d="M206 108C180 116 150 126 120 130C100 132 84 126 72 116"/>
+  </g>
+  <g data-term="t_radial_nerve">
+    <path class="hit" stroke-width="48" d="M84 316C82 328 84 340 86 350C86 400 84 460 90 520"/>
+    <path class="nerve behind" stroke-width="4" d="M206 112C190 140 170 170 140 200C116 222 96 250 86 290"/>
+    <path class="nerve" stroke-width="3" d="M86 290C82 310 82 330 86 350C86 400 84 460 90 520C92 540 94 556 96 570"/>
+  </g>
+  <g data-term="t_musculocutaneous_nerve">
+    <path class="hit" stroke-width="48" d="M118 334C112 350 106 366 102 384"/>
+    <path class="nerve behind" stroke-width="3" d="M208 112C184 130 160 150 146 176C138 196 134 230 132 270C130 296 126 316 118 334"/>
+    <path class="nerve" stroke-width="2.5" d="M118 334C112 350 106 366 102 384"/>
+  </g>
+  <g data-term="t_median_nerve">
+    <path class="hit" stroke-width="48" d="M150 356C140 390 134 450 134 520"/>
+    <path class="nerve" stroke-width="4" d="M212 116C200 160 188 220 178 280C172 310 160 340 146 364C138 400 134 460 134 520V548"/>
+    <path class="nerve behind" stroke-width="4" d="M134 548V572"/>
+    <path class="nerve" stroke-width="3" d="M134 572C134 596 128 612 118 626"/>
+  </g>
+  <g data-term="t_ulnar_nerve">
+    <path class="hit" stroke-width="48" d="M190 360C186 420 182 470 178 520C176 548 174 576 172 604"/>
+    <path class="nerve" stroke-width="3.5" d="M216 118C206 170 198 240 194 300"/>
+    <path class="nerve behind" stroke-width="3.5" d="M194 300C192 320 192 336 192 352"/>
+    <path class="nerve" stroke-width="3.5" d="M192 352C188 400 182 460 176 520C174 548 172 576 170 610"/>
+  </g>
+</svg>

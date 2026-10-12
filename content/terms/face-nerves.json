@@ -8,6 +8,20 @@
       "system": "nervous",
       "about": "Пятая пара черепных нервов, самый крупный нерв головы. Даёт чувствительность коже лица, слизистым носа и рта, зубам; его двигательные волокна идут к жевательным мышцам. Делится на три ветви.",
       "relations": {},
+      "diagrams": ["d_cranial_nerves", "d_trigeminal"],
+      "audio": null,
+      "source": "TA2; Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "t_trigeminal_ganglion",
+      "en": "trigeminal ganglion",
+      "ru": "тройничный узел",
+      "kind": "structure",
+      "system": "nervous",
+      "about": "Чувствительный узел тройничного нерва на верхушке пирамиды височной кости — как спинномозговой узел у спинномозгового нерва. От него отходят три ветви: глазной, верхнечелюстной и нижнечелюстной нервы.",
+      "relations": {},
       "diagrams": ["d_trigeminal"],
       "audio": null,
       "source": "TA2; Сапин, т. 2",
@@ -96,7 +110,11 @@
       "kind": "nerve",
       "system": "nervous",
       "about": "Третья, самая крупная ветвь тройничного нерва — смешанная. Иннервирует жевательные мышцы, нижние зубы, кожу подбородка, нижней губы и височной области.",
-      "relations": { "branchOf": "t_trigeminal_nerve", "innervates": ["t_masseter"] },
+      "relations": {
+        "branchOf": "t_trigeminal_nerve",
+        "innervates": ["t_masseter"],
+        "innervatesPart": ["t_parotid_gland", "t_tongue"]
+      },
       "diagrams": ["d_trigeminal"],
       "audio": null,
       "source": "TA2; Сапин, т. 2",
@@ -152,12 +170,29 @@
       "kind": "nerve",
       "system": "nervous",
       "about": "Седьмая пара черепных нервов. Выходит из черепа через шилососцевидное отверстие позади уха и иннервирует мимические мышцы; другие его волокна несут вкус от передних двух третей языка и идут к слёзной и части слюнных желёз.",
-      "relations": { "innervates": ["t_orbicularis_oculi", "t_orbicularis_oris", "t_buccinator"] },
-      "diagrams": ["d_facial_nerve"],
+      "relations": {
+        "innervates": ["t_orbicularis_oculi", "t_orbicularis_oris", "t_buccinator"],
+        "innervatesPart": ["t_tongue"]
+      },
+      "diagrams": ["d_cranial_nerves", "d_facial_nerve"],
       "audio": null,
       "source": "TA2; Сапин, т. 2",
       "verified": true,
-      "note": ""
+      "note": "Язык — частью: вкус передних двух третей несёт его ветвь, барабанная струна."
+    },
+    {
+      "id": "t_stylomastoid_foramen",
+      "en": "stylomastoid foramen",
+      "ru": "шилососцевидное отверстие",
+      "kind": "structure",
+      "system": "other",
+      "about": "Отверстие на нижней поверхности височной кости, между шиловидным и сосцевидным отростками. Через него лицевой нерв выходит из черепа и сразу входит в околоушную железу.",
+      "relations": {},
+      "diagrams": ["d_facial_nerve"],
+      "audio": null,
+      "source": "TA2; Сапин, т. 1",
+      "verified": true,
+      "note": "Часть кости; в курсе — как место выхода нерва."
     },
     {
       "id": "t_parotid_gland",

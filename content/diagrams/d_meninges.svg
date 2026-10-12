@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" data-diagram="d_meninges">
+  <title>Оболочки спинного мозга (вид сзади, слои сняты ступенями)</title>
+  <!--
+    Позвоночный канал вскрыт сзади, по краям — его костные стенки.
+    Вверху твёрдая оболочка цела: между ней и стенками — эпидуральное
+    пространство с клетчаткой. Ниже она рассечена и отвёрнута — видна
+    паутинная. Ещё ниже рассечена и паутинная: открылось подпаутинное
+    пространство со спинномозговой жидкостью, а в нём — спинной мозг,
+    покрытый мягкой оболочкой (она срастается с его поверхностью).
+    Слои и промежутки между ними на схеме намного толще, чем в жизни.
+  -->
+  <rect class="bone" x="0" y="0" width="22" height="520"/>
+  <rect class="bone" x="338" y="0" width="22" height="520"/>
+
+  <g data-term="t_vertebral_canal" data-hit="area">
+    <rect class="outline" x="22" y="0" width="316" height="520"/>
+    <g data-term="t_meninges">
+      <g data-term="t_dura_mater" data-hit="area">
+        <rect class="sheet-1" x="40" y="0" width="280" height="170"/>
+        <path class="sheet-1" d="M40 170H54V520H26V184Z"/>
+        <path class="sheet-1" d="M320 170H306V520H334V184Z"/>
+      </g>
+      <g data-term="t_arachnoid_mater" data-hit="area">
+        <rect class="sheet-2" x="58" y="170" width="244" height="160"/>
+        <path class="sheet-2" d="M58 330H80V520H58Z"/>
+        <path class="sheet-2" d="M302 330H280V520H302Z"/>
+      </g>
+      <g data-term="t_subarachnoid_space" data-hit="area">
+        <rect class="fluid" x="80" y="330" width="200" height="190"/>
+      </g>
+      <g data-term="t_pia_mater" data-hit="area">
+        <path class="brain" d="M132 330H228V520H132Z"/>
+        <path class="membrane" stroke-width="3" d="M132 330V520M228 330V520"/>
+      </g>
+    </g>
+  </g>
+</svg>

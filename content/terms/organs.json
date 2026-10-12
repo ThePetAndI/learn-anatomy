@@ -94,7 +94,7 @@
       "system": "nervous",
       "about": "Часть центральной нервной системы в полости черепа. Получает кровь от двух пар артерий — внутренних сонных и позвоночных.",
       "relations": {},
-      "diagrams": ["d_head_neck"],
+      "diagrams": ["d_head_neck", "d_nervous_system"],
       "audio": null,
       "source": "TA2; Сапин, т. 2",
       "verified": true,

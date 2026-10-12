@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" data-diagram="d_autonomic">
+  <title>Вегетативная нервная система (схема)</title>
+  <!--
+    Схема, а не вид тела: посередине головной и спинной мозг, слева —
+    симпатическая часть, справа — парасимпатическая. На самом деле обе
+    части есть с каждой стороны тела.
+    Серым на спинном мозге отмечены сегменты, где лежат вегетативные
+    нейроны: от I грудного до II поясничного — симпатические, II–IV
+    крестцовые — парасимпатические.
+    Слева: из грудопоясничных сегментов волокна идут в симпатический ствол —
+    цепочку узлов вдоль позвоночника; от верхнего шейного узла — к глазу,
+    от шейных и верхних грудных — к сердцу. Большой внутренностный нерв
+    проходит ствол без переключения и кончается в чревных узлах внутри
+    чревного (солнечного) сплетения; от него — к желудку.
+    Справа: глазодвигательный нерв из среднего мозга — к ресничному узлу
+    и глазу; блуждающий из продолговатого мозга — к сердцу и желудку;
+    тазовые внутренностные нервы из крестцовых сегментов — к мочевому пузырю.
+    Органы — без подписи.
+  -->
+  <!-- центральная нервная система: сегменты с вегетативными нейронами — серым -->
+  <ellipse class="brain" cx="180" cy="44" rx="44" ry="32"/>
+  <rect class="brain" x="172" y="70" width="16" height="42"/>
+  <rect class="brain" x="174" y="108" width="12" height="314" rx="6"/>
+  <rect class="grey" x="174" y="170" width="12" height="152"/>
+  <rect class="grey" x="174" y="366" width="12" height="34"/>
+
+  <!-- органы -->
+  <circle class="organ" cx="52" cy="58" r="15"/>
+  <ellipse class="organ" cx="58" cy="190" rx="22" ry="18"/>
+  <ellipse class="organ" cx="54" cy="424" rx="26" ry="18"/>
+  <circle class="organ" cx="326" cy="56" r="15"/>
+  <ellipse class="organ" cx="304" cy="190" rx="22" ry="18"/>
+  <ellipse class="organ" cx="308" cy="360" rx="26" ry="18"/>
+  <ellipse class="organ" cx="306" cy="482" rx="22" ry="18"/>
+
+  <g data-term="t_autonomic_nervous_system">
+    <g data-term="t_sympathetic_nervous_system" data-hit="area">
+      <path class="nerve" stroke-width="1.2" d="M174 172H132M174 183H132M174 194H132M174 205H132M174 216H132M174 227H132M174 238H132M174 249H132M174 260H132M174 271H132M174 282H132M174 293H132M174 304H132M174 315H132"/>
+      <path class="nerve" stroke-width="1.5" d="M122 98C104 86 86 72 66 62M122 160C108 168 94 178 80 186M122 180C108 184 94 188 80 190"/>
+      <g data-term="t_sympathetic_trunk">
+        <path class="hit" stroke-width="48" d="M128 96V404"/>
+        <path class="nerve" stroke-width="2.5" d="M128 96V404"/>
+        <circle class="grey" cx="128" cy="102" r="7"/>
+        <circle class="grey" cx="128" cy="138" r="5"/>
+        <circle class="grey" cx="128" cy="162" r="6"/>
+        <path class="grey" d="M124 178a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 189a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 200a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 211a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 222a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 233a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 244a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 255a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 266a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 277a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 288a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 299a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 312a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 326a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 340a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 354a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 368a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 380a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 392a4 4 0 1 0 8 0a4 4 0 1 0 -8 0M124 404a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/>
+      </g>
+      <g data-term="t_greater_splanchnic_nerve">
+        <path class="hit" stroke-width="48" d="M124 244C114 270 102 296 92 314"/>
+        <path class="nerve" stroke-width="2" d="M124 222C112 252 98 292 86 320M124 244C114 270 102 300 88 322M124 266C116 286 106 306 90 324"/>
+      </g>
+      <g data-term="t_celiac_plexus">
+        <rect class="hit hit-area" x="34" y="294" width="92" height="92"/>
+        <path class="nerve" stroke-width="1.5" d="M102 340H120M99 351L116 361M91 359L102 378M80 362V384M69 359L58 378M61 351L42 362M58 340H36M61 329L42 318M69 321L58 302M80 318V296M91 321L102 302M99 329L116 319"/>
+        <g data-term="t_celiac_ganglion">
+          <circle class="hit hit-area" cx="80" cy="340" r="24"/>
+          <ellipse class="grey" cx="73" cy="340" rx="7" ry="10"/>
+          <ellipse class="grey" cx="87" cy="340" rx="7" ry="10"/>
+        </g>
+      </g>
+    </g>
+
+    <g data-term="t_parasympathetic_nervous_system" data-hit="area">
+      <path class="nerve" stroke-width="1.5" d="M297 64C302 62 306 60 311 58M234 184C254 186 270 188 282 190M240 340C258 346 274 352 284 356"/>
+      <g data-term="t_oculomotor_nerve">
+        <path class="hit" stroke-width="48" d="M196 78C222 76 248 72 266 70"/>
+        <path class="nerve" stroke-width="3" d="M188 78C222 76 254 72 283 68"/>
+      </g>
+      <g data-term="t_ciliary_ganglion">
+        <circle class="hit hit-area" cx="290" cy="67" r="24"/>
+        <ellipse class="grey" cx="290" cy="67" rx="7" ry="5"/>
+      </g>
+      <g data-term="t_vagus_nerve">
+        <path class="hit" stroke-width="48" d="M210 114C224 130 232 160 232 170C236 220 238 290 240 350"/>
+        <path class="nerve" stroke-width="3.5" d="M188 104C210 110 226 130 232 160C236 220 238 290 240 350"/>
+      </g>
+      <g data-term="t_pelvic_splanchnic_nerves">
+        <path class="hit" stroke-width="48" d="M200 394C226 414 256 444 284 466"/>
+        <path class="nerve" stroke-width="2" d="M186 372C220 400 260 438 288 464M186 384C220 410 256 444 286 468M186 396C218 420 254 450 284 472"/>
+      </g>
+    </g>
+  </g>
+</svg>

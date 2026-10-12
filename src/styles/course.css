@@ -182,8 +182,6 @@
 .lesson-row__title { font-size: 16px; font-weight: 500; line-height: 1.3; }
 .lesson-row__meta { font-size: 13px; color: var(--ink-3); }
 .lesson-row.is-current .lesson-row__title { font-weight: 600; }
-.lesson-row.is-locked .lesson-row__title { color: var(--ink-3); }
-.lesson-row__lock { width: 18px; height: 18px; color: var(--ink-4); }
 
 /* ——— повторение раздела ——— */
 .section-review {

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330" data-diagram="d_spinal_cord_section">
+  <title>Поперечный срез спинного мозга (грудной сегмент)</title>
+  <!--
+    Задняя сторона сверху, передняя снизу; ниже спинного мозга — тело
+    позвонка (без подписи). Серое вещество — бабочка: узкие задние рога
+    вверху, широкие передние внизу, по бокам маленькие боковые рога — они
+    есть только в грудных и верхних поясничных сегментах. В середине —
+    центральный канал. Снаружи — белое вещество.
+    Корешки и ветви показаны слева: задний корешок со спинномозговым узлом,
+    передний корешок; за узлом они сливаются в спинномозговой нерв. Нерв
+    делится на заднюю ветвь (вверх, без подписи) и переднюю. От передней
+    ветви к узлу симпатического ствола идёт белая соединительная ветвь,
+    обратно к нерву — серая; от узла вперёд — большой внутренностный нерв.
+    Узел ствола лежит сбоку от тела позвонка.
+  -->
+  <ellipse class="bone" cx="244" cy="270" rx="62" ry="40"/>
+
+  <g data-term="t_spinal_cord">
+    <g data-term="t_white_matter" data-hit="area">
+      <ellipse class="white" cx="240" cy="116" rx="95" ry="72.5"/>
+    </g>
+    <g data-term="t_grey_matter" data-hit="area">
+      <path class="grey" d="M220 98.5H260C267.5 108.5 272.5 118.5 272.5 131C272.5 143.5 265 151 255 151H225C215 151 207.5 143.5 207.5 131C207.5 118.5 212.5 108.5 220 98.5Z"/>
+      <g data-term="t_anterior_horn" data-hit="area">
+        <path class="grey" d="M210 133.5C200 143.5 195 156 197.5 168.5C200 178.5 212.5 183.5 225 178.5C232.5 173.5 235 163.5 235 151H220C215 146 212.5 141 210 133.5Z"/>
+      </g>
+      <g data-term="t_anterior_horn" data-hit="area">
+        <path class="grey" d="M270 133.5C280 143.5 285 156 282.5 168.5C280 178.5 267.5 183.5 255 178.5C247.5 173.5 245 163.5 245 151H260C265 146 267.5 141 270 133.5Z"/>
+      </g>
+      <g data-term="t_lateral_horn">
+        <circle class="hit hit-area" cx="175" cy="118.5" r="30"/>
+        <path class="grey" d="M210 111L193.8 122.3L210 133.5Z"/>
+      </g>
+      <g data-term="t_lateral_horn">
+        <circle class="hit hit-area" cx="305" cy="118.5" r="30"/>
+        <path class="grey" d="M270 111L286.3 122.3L270 133.5Z"/>
+      </g>
+      <g data-term="t_posterior_horn">
+        <rect class="hit hit-area" x="182.5" y="43.5" width="60" height="60"/>
+        <path class="grey" d="M217.5 103.5C212.5 88.5 207.5 71 202.5 58.5C207.5 51 215 53.5 220 61C227.5 76 232.5 91 237.5 103.5Z"/>
+      </g>
+      <g data-term="t_posterior_horn">
+        <rect class="hit hit-area" x="240" y="43.5" width="60" height="60"/>
+        <path class="grey" d="M262.5 103.5C267.5 88.5 272.5 71 277.5 58.5C272.5 51 265 53.5 260 61C252.5 76 247.5 91 242.5 103.5Z"/>
+      </g>
+      <g data-term="t_central_canal">
+        <circle class="hit hit-area" cx="240" cy="111" r="30"/>
+        <circle class="fluid" cx="240" cy="126" r="5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- корешки, узел и нерв -->
+  <g data-term="t_posterior_root">
+    <path class="hit" stroke-width="48" d="M180 62C170 70 162 80 156 88"/>
+    <path class="nerve" stroke-width="4" d="M184 60C172 68 162 80 154 90"/>
+  </g>
+  <g data-term="t_anterior_root">
+    <path class="hit" stroke-width="48" d="M172 165C160 160 148 146 140 132C132 124 124 118 116 114"/>
+    <path class="nerve" stroke-width="4" d="M174 165C160 160 148 146 140 132C130 122 120 116 106 112"/>
+  </g>
+  <g data-term="t_spinal_ganglion">
+    <circle class="hit hit-area" cx="136" cy="96" r="24"/>
+    <ellipse class="grey" cx="136" cy="96" rx="20" ry="13"/>
+  </g>
+  <g data-term="t_spinal_nerve">
+    <path class="hit" stroke-width="48" d="M106 108C94 112 80 116 64 118"/>
+    <path class="nerve" stroke-width="7" d="M118 102C104 108 84 114 64 118"/>
+  </g>
+  <!-- задняя ветвь — без подписи -->
+  <path class="nerve" stroke-width="4" d="M64 118C58 102 54 86 50 64"/>
+  <g data-term="t_anterior_ramus">
+    <path class="hit" stroke-width="48" d="M62 140C56 180 48 220 40 262"/>
+    <path class="nerve" stroke-width="5" d="M64 118C58 160 50 210 40 262"/>
+  </g>
+
+  <!-- симпатический ствол и его ветви -->
+  <g data-term="t_white_ramus_communicans">
+    <path class="hit" stroke-width="48" d="M58 172C80 206 100 232 116 250"/>
+    <path class="nerve" stroke-width="3" d="M56 168C78 204 100 232 120 254"/>
+  </g>
+  <g data-term="t_grey_ramus_communicans">
+    <path class="hit" stroke-width="48" d="M132 236C128 196 114 152 100 120"/>
+    <path class="nerve" stroke-width="2" d="M132 248C128 204 112 156 96 114"/>
+  </g>
+  <g data-term="t_greater_splanchnic_nerve">
+    <path class="hit" stroke-width="48" d="M134 284C140 300 148 314 156 330"/>
+    <path class="nerve" stroke-width="3" d="M132 276C140 296 148 314 156 330"/>
+  </g>
+  <g data-term="t_sympathetic_trunk">
+    <circle class="hit hit-area" cx="128" cy="262" r="24"/>
+    <ellipse class="grey" cx="128" cy="262" rx="11" ry="15"/>
+  </g>
+</svg>

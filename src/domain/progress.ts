@@ -1,11 +1,10 @@
 /**
- * Прогресс по курсу: какие уроки пройдены, какой открыт следующим,
+ * Прогресс по курсу: какие уроки пройдены, какой предложить следующим,
  * сколько процентов раздела готово.
  *
- * Любой раздел можно начать сразу: его первый урок открыт всегда.
- * Внутри раздела уроки открываются по порядку — следующий, когда пройден
- * предыдущий: раздел идёт от общего к частному. Если урок опирается
- * на термин непройденного раздела, сборщик ставит перед заданием его карточку.
+ * Открыт любой урок: порядок в курсе — рекомендованный, а не обязательный.
+ * Если урок опирается на термин, которого человек ещё не видел, сборщик
+ * ставит перед заданием его карточку.
  */
 
 import type { SaveState } from '../data/state';
@@ -20,30 +19,29 @@ export function isCompleted(state: SaveState, lessonId: string): boolean {
   return (state.lessons[lessonId]?.completedAt ?? null) !== null;
 }
 
-/** Открыт ли урок: первый в разделе — всегда, остальные — после предыдущего в том же разделе. */
-export function isOpen(state: SaveState, lesson: LessonRef, all: readonly LessonRef[]): boolean {
-  if (isCompleted(state, lesson.id)) return true;
-  const prev = all.find((l) => l.sectionId === lesson.sectionId && l.order === lesson.order - 1);
-  return prev === undefined || isCompleted(state, prev.id);
-}
-
 /**
- * Урок, с которого продолжить. Сначала — в разделе, где последним пройден урок:
- * человек мог начать с середины курса и ждёт продолжения там же. Если там всё
- * пройдено или ещё ничего не пройдено — первый открытый непройденный по курсу.
+ * Урок, с которого продолжить: следующий непройденный после последнего
+ * пройденного — в том же разделе, ведь человек мог начать с середины курса.
+ * Если дальше в разделе всё пройдено — первый непройденный в этом разделе,
+ * а если и там всё — первый непройденный по курсу.
  */
 export function nextLesson<L extends LessonRef>(state: SaveState, all: readonly L[]): L | undefined {
-  let lastSection: string | null = null;
+  let last: L | undefined;
   let lastAt = -Infinity;
   for (const l of all) {
     const at = state.lessons[l.id]?.completedAt ?? null;
     if (at !== null && at >= lastAt) {
       lastAt = at;
-      lastSection = l.sectionId;
+      last = l;
     }
   }
-  const pending = (l: L): boolean => !isCompleted(state, l.id) && isOpen(state, l, all);
-  return all.find((l) => l.sectionId === lastSection && pending(l)) ?? all.find(pending);
+  const pending = (l: L): boolean => !isCompleted(state, l.id);
+  const inSection = (l: L): boolean => last !== undefined && l.sectionId === last.sectionId;
+  return (
+    all.find((l) => inSection(l) && l.order > last!.order && pending(l)) ??
+    all.find((l) => inSection(l) && pending(l)) ??
+    all.find(pending)
+  );
 }
 
 /** Доля пройденных уроков раздела, 0..1. В разделе без уроков — 0. */

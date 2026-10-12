@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { checkTyped, normalizeEn } from '../src/domain/answer';
 import { areConfusable, confusableNames, editDistance, similarWords } from '../src/domain/confusable';
 import { createInitialState } from '../src/data/state';
-import { isOpen, nextLesson, recordLessonResult, sectionProgress } from '../src/domain/progress';
+import { nextLesson, recordLessonResult, sectionProgress } from '../src/domain/progress';
 import {
   BOX_INTERVALS,
   RETRY_DELAY_MS,
@@ -156,22 +156,20 @@ describe('прогресс по курсу', () => {
     { id: 'm1', order: 3, sectionId: 's_b' },
     { id: 'm2', order: 4, sectionId: 's_b' },
   ];
-  const byId = (id: string) => all.find((l) => l.id === id)!;
-
-  it('внутри раздела уроки открываются по порядку', () => {
+  it('с нуля «Продолжить» ведёт к первому уроку курса, после урока — к следующему', () => {
     const s = createInitialState(0);
-    expect(isOpen(s, byId('l1'), all)).toBe(true);
-    expect(isOpen(s, byId('l2'), all)).toBe(false);
+    expect(nextLesson(s, all)?.id).toBe('l1');
     recordLessonResult(s, 'l1', 0.8, 1);
-    expect(isOpen(s, byId('l2'), all)).toBe(true);
-    expect(isOpen(s, byId('l3'), all)).toBe(false);
     expect(nextLesson(s, all)?.id).toBe('l2');
   });
 
-  it('любой раздел можно начать сразу: его первый урок открыт без прошлых разделов', () => {
+  it('урок из середины: «Продолжить» ведёт дальше по разделу, а не к его началу', () => {
     const s = createInitialState(0);
-    expect(isOpen(s, byId('m1'), all)).toBe(true);
-    expect(isOpen(s, byId('m2'), all)).toBe(false);
+    recordLessonResult(s, 'l2', 1, 10);
+    expect(nextLesson(s, all)?.id).toBe('l3');
+    recordLessonResult(s, 'l3', 1, 20);
+    // дальше в разделе всё пройдено — возвращаемся к пропущенному началу
+    expect(nextLesson(s, all)?.id).toBe('l1');
   });
 
   it('«Продолжить» ведёт в раздел, где занимались последним', () => {

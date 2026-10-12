@@ -433,6 +433,8 @@ export const DIAGRAM_CLASSES: ReadonlySet<string> = new Set([
   'vessel-oxy', 'vessel-deoxy', 'valve', 'valve-ring', 'hit', 'hit-area',
   'outline', 'landmark', 'groove', 'node', 'conduct', 'behind', 'tube', 'line',
   'nerve', 'ring', 'zone-1', 'zone-2', 'zone-3',
+  'brain', 'lobe-1', 'lobe-2', 'lobe-3', 'lobe-4', 'sulcus', 'grey', 'white', 'bone',
+  'membrane', 'fluid', 'soma', 'myelin', 'sheet-1', 'sheet-2',
 ]);
 
 const DIAGRAM_TAGS = new Set(['svg', 'title', 'g', 'path', 'rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon']);

@@ -113,7 +113,10 @@ export function createAtlasScreen(): ScreenView {
       'div',
       { class: 'screen-body atlas' },
       h('header', { class: 'page-head' }, h('div', { class: 'eyebrow', text: 'Атлас' }), h('h1', { class: 'page-title', text: 'Схемы' })),
-      h('p', { class: 'atlas__note', text: 'Вид спереди: правая сторона тела — слева от вас. Цвет — по крови: красный — богатая кислородом, синий — бедная.' }),
+      h('p', {
+        class: 'atlas__note',
+        text: 'Обычно вид спереди: правая сторона тела — слева от вас; другой вид назван в заголовке схемы. Сосуды — по крови: красный — богатая кислородом, синий — бедная; нервы — жёлтые.',
+      }),
       h('div', { class: 'atlas__grid' }, ...items),
     ),
   );

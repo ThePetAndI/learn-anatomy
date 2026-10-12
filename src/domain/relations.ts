@@ -51,8 +51,19 @@ export const LINKS: Record<LinkKind, LinkSpec> = {
 const mainOf = (t: Term, kind: LinkKind): string[] => t.relations[LINKS[kind].main] ?? [];
 const partOf = (t: Term, kind: LinkKind): string[] => t.relations[LINKS[kind].part] ?? [];
 
+/*
+ * Словарь по id строится один раз на список терминов: предки и ветви ищутся
+ * для каждого варианта ответа, и без кэша вопрос о нерве собирался заметно долго.
+ */
+const byIdCache = new WeakMap<readonly Term[], Map<string, Term>>();
+
 function byIdMap(all: readonly Term[]): Map<string, Term> {
-  return new Map(all.map((t) => [t.id, t]));
+  let map = byIdCache.get(all);
+  if (!map) {
+    map = new Map(all.map((t) => [t.id, t]));
+    byIdCache.set(all, map);
+  }
+  return map;
 }
 
 /** Предки по ветвлению: у почечной артерии — брюшная аорта. */

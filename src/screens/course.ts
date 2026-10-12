@@ -1,9 +1,9 @@
 /**
  * Курс: разделы и уроки по порядку, прогресс раздела в процентах.
  * Уроки раздела нанизаны на вертикальную линию, как ветви на сосуд:
- * пройденный — залитый узел, текущий — кольцо, закрытый — серый.
- * Любой раздел можно начать сразу; у раздела, где термины уже встречались,
- * есть кнопка «Повторить раздел».
+ * пройденный — залитый узел, тот, что предлагает «Продолжить», — кольцо.
+ * Открыт любой урок; у раздела, где термины уже встречались, есть кнопка
+ * «Повторить раздел».
  */
 
 import { h, onTap } from '../core/dom';
@@ -12,7 +12,7 @@ import { getState, subscribe } from '../core/store';
 import { plural } from '../core/time';
 import { lessons, lessonsOf, sections, type FlatLesson } from '../data/content';
 import type { CourseSystem, Section } from '../data/types';
-import { isCompleted, isOpen, nextLesson, sectionProgress } from '../domain/progress';
+import { isCompleted, nextLesson, sectionProgress } from '../domain/progress';
 import { icon } from '../ui/icons';
 import { openLesson } from './lesson';
 import { openReview, sectionDueCount, sectionHasSeen } from './review';
@@ -30,16 +30,15 @@ function lessonMeta(l: FlatLesson): string {
 function lessonRow(l: FlatLesson, current: FlatLesson | undefined): HTMLElement {
   const state = getState();
   const done = isCompleted(state, l.id);
-  const open = isOpen(state, l, lessons);
   const isCurrent = current?.id === l.id;
-  const status = done ? 'is-done' : isCurrent ? 'is-current' : open ? 'is-open' : 'is-locked';
+  const status = done ? 'is-done' : isCurrent ? 'is-current' : 'is-open';
 
   const row = h(
     'button',
     {
       class: 'lesson-row ' + status,
-      attr: { type: 'button', disabled: !open },
-      aria: { label: l.title + (done ? ', пройден' : open ? '' : ', закрыт') },
+      attr: { type: 'button' },
+      aria: { label: l.title + (done ? ', пройден' : '') },
     },
     h('span', { class: 'lesson-row__node' }, done ? icon('check') : null),
     h(
@@ -48,9 +47,8 @@ function lessonRow(l: FlatLesson, current: FlatLesson | undefined): HTMLElement 
       h('span', { class: 'lesson-row__title', text: l.title }),
       h('span', { class: 'lesson-row__meta', text: lessonMeta(l) }),
     ),
-    open ? null : icon('lock', 'icon lesson-row__lock'),
   );
-  if (open) onTap(row, () => openLesson(l));
+  onTap(row, () => openLesson(l));
   return row;
 }
 

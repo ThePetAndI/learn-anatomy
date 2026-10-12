@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" data-diagram="d_cranial_nerves">
+  <title>Черепные нервы на основании мозга (вид снизу)</title>
+  <!--
+    Мозг снизу, лоб вверху; как на виде спереди, правая сторона — слева.
+    Сверху вниз: под лобными долями — обонятельные луковицы с нитями
+    обонятельного нерва (I; сама луковица и тракт — часть мозга, без
+    подписи); зрительные нервы (II) сходятся в перекрёст. Из среднего мозга
+    между его ножками выходит глазодвигательный (III); блоковый (IV) —
+    единственный выходит сзади и показывается сбоку от ножки. От боковой
+    части моста — тройничный (V), самый толстый. На границе моста
+    и продолговатого мозга: у середины — отводящий (VI), сбоку — лицевой
+    (VII) и преддверно-улитковый (VIII). Сбоку от оливы продолговатого мозга —
+    языкоглоточный (IX) и блуждающий (X); добавочный (XI) поднимается
+    вдоль спинного мозга. Между пирамидой и оливой — подъязычный (XII).
+    Нервы разведены веером, чтобы по ним можно было попасть пальцем:
+    концы нервов на схеме не совпадают с отверстиями черепа.
+  -->
+  <path class="brain" d="M176 18C122 14 72 38 58 92C52 120 60 144 82 150C112 156 150 150 176 148ZM184 18C238 14 288 38 302 92C308 120 300 144 278 150C248 156 210 150 184 148Z"/>
+  <path class="brain" d="M84 158C58 168 44 206 50 246C56 272 86 288 114 282C132 276 142 256 144 232C144 206 136 178 120 164C108 156 96 154 84 158ZM276 158C302 168 316 206 310 246C304 272 274 288 246 282C228 276 218 256 216 232C216 206 224 178 240 164C252 156 264 154 276 158Z"/>
+  <path class="brain" d="M178 316C140 304 92 310 72 340C56 366 70 404 110 420C142 430 170 424 178 404ZM182 316C220 304 268 310 288 340C304 366 290 404 250 420C218 430 190 424 182 404Z"/>
+  <path class="sulcus" stroke-width="1.5" d="M180 20V146"/>
+
+  <!-- обонятельные луковицы и тракты, ножки среднего мозга -->
+  <ellipse class="brain" cx="160" cy="46" rx="7" ry="14"/>
+  <ellipse class="brain" cx="200" cy="46" rx="7" ry="14"/>
+  <path class="membrane" stroke-width="5" d="M160 60C160 90 162 118 166 140M200 60C200 90 198 118 194 140"/>
+  <path class="brain" d="M178 184C166 186 156 192 150 204L166 214C170 204 174 196 178 190ZM182 184C194 186 204 192 210 204L194 214C190 204 186 196 182 190Z"/>
+
+  <!-- мост, продолговатый мозг с пирамидами и оливами, спинной мозг — без подписи:
+       их почти целиком закрывают нервы; искать их — на срединном разрезе -->
+  <path class="brain" d="M140 212C160 200 200 200 220 212C230 230 230 256 220 270C200 280 160 280 140 270C130 256 130 230 140 212Z"/>
+  <path class="sulcus" stroke-width="1.5" d="M180 206V276"/>
+  <path class="brain" d="M156 278H204C204 300 200 330 192 356H168C160 330 156 300 156 278Z"/>
+  <path class="sulcus" stroke-width="1.2" d="M174 282V352M186 282V352"/>
+  <ellipse class="brain" cx="162" cy="304" rx="5" ry="14"/>
+  <ellipse class="brain" cx="198" cy="304" rx="5" ry="14"/>
+  <path class="brain" d="M168 356H192V440H168Z"/>
+
+  <!-- зрительные тракты, ножка гипофиза, сосцевидные тела — без подписи -->
+  <path class="nerve" stroke-width="6" d="M172 160C162 168 154 176 148 188M188 160C198 168 206 176 212 188"/>
+  <circle class="organ" cx="180" cy="172" r="5"/>
+  <circle class="brain" cx="174" cy="190" r="4"/>
+  <circle class="brain" cx="186" cy="190" r="4"/>
+
+  <g data-term="t_cranial_nerves">
+      <g data-term="t_olfactory_nerve">
+        <path class="hit" stroke-width="48" d="M160 28V66"/>
+        <path class="nerve" stroke-width="1.5" d="M156 38L150 34M156 48L149 48M156 58L150 62M164 38L170 34M164 48L171 48M164 58L170 62"/>
+      </g>
+      <g data-term="t_olfactory_nerve">
+        <path class="hit" stroke-width="48" d="M200 28V66"/>
+        <path class="nerve" stroke-width="1.5" d="M204 38L210 34M204 48L211 48M204 58L210 62M196 38L190 34M196 48L189 48M196 58L190 62"/>
+      </g>
+      <g data-term="t_optic_nerve">
+        <path class="hit" stroke-width="48" d="M172 154C162 140 148 124 128 108"/>
+        <path class="nerve" stroke-width="7" d="M172 154C162 140 148 124 128 108"/>
+      </g>
+      <g data-term="t_optic_nerve">
+        <path class="hit" stroke-width="48" d="M188 154C198 140 212 124 232 108"/>
+        <path class="nerve" stroke-width="7" d="M188 154C198 140 212 124 232 108"/>
+      </g>
+      <g data-term="t_oculomotor_nerve">
+        <path class="hit" stroke-width="48" d="M174 198C164 186 140 166 112 150"/>
+        <path class="nerve" stroke-width="4" d="M174 198C164 186 140 166 112 150"/>
+      </g>
+      <g data-term="t_oculomotor_nerve">
+        <path class="hit" stroke-width="48" d="M186 198C196 186 220 166 248 150"/>
+        <path class="nerve" stroke-width="4" d="M186 198C196 186 220 166 248 150"/>
+      </g>
+      <g data-term="t_trochlear_nerve">
+        <path class="hit" stroke-width="48" d="M152 210C140 200 120 186 100 178"/>
+        <path class="nerve" stroke-width="2" d="M152 210C140 200 120 186 100 178"/>
+      </g>
+      <g data-term="t_trochlear_nerve">
+        <path class="hit" stroke-width="48" d="M208 210C220 200 240 186 260 178"/>
+        <path class="nerve" stroke-width="2" d="M208 210C220 200 240 186 260 178"/>
+      </g>
+      <g data-term="t_trigeminal_nerve">
+        <path class="hit" stroke-width="48" d="M144 238C120 232 90 222 64 214"/>
+        <path class="nerve" stroke-width="8" d="M144 238C120 232 90 222 64 214"/>
+      </g>
+      <g data-term="t_trigeminal_nerve">
+        <path class="hit" stroke-width="48" d="M216 238C240 232 270 222 296 214"/>
+        <path class="nerve" stroke-width="8" d="M216 238C240 232 270 222 296 214"/>
+      </g>
+      <g data-term="t_abducent_nerve">
+        <path class="hit" stroke-width="48" d="M172 274C170 254 168 232 162 214"/>
+        <path class="nerve" stroke-width="2.5" d="M172 274C170 254 168 232 162 214"/>
+      </g>
+      <g data-term="t_abducent_nerve">
+        <path class="hit" stroke-width="48" d="M188 274C190 254 192 232 198 214"/>
+        <path class="nerve" stroke-width="2.5" d="M188 274C190 254 192 232 198 214"/>
+      </g>
+      <g data-term="t_facial_nerve">
+        <path class="hit" stroke-width="48" d="M150 272C120 266 90 260 60 256"/>
+        <path class="nerve" stroke-width="3.5" d="M150 272C120 266 90 260 60 256"/>
+      </g>
+      <g data-term="t_facial_nerve">
+        <path class="hit" stroke-width="48" d="M210 272C240 266 270 260 300 256"/>
+        <path class="nerve" stroke-width="3.5" d="M210 272C240 266 270 260 300 256"/>
+      </g>
+      <g data-term="t_vestibulocochlear_nerve">
+        <path class="hit" stroke-width="48" d="M148 282C118 284 88 286 56 288"/>
+        <path class="nerve" stroke-width="4" d="M148 282C118 284 88 286 56 288"/>
+      </g>
+      <g data-term="t_vestibulocochlear_nerve">
+        <path class="hit" stroke-width="48" d="M212 282C242 284 272 286 304 288"/>
+        <path class="nerve" stroke-width="4" d="M212 282C242 284 272 286 304 288"/>
+      </g>
+      <g data-term="t_glossopharyngeal_nerve">
+        <path class="hit" stroke-width="48" d="M158 296C126 302 92 310 60 318"/>
+        <path class="nerve" stroke-width="2.5" d="M158 296C126 302 92 310 60 318"/>
+      </g>
+      <g data-term="t_glossopharyngeal_nerve">
+        <path class="hit" stroke-width="48" d="M202 296C234 302 268 310 300 318"/>
+        <path class="nerve" stroke-width="2.5" d="M202 296C234 302 268 310 300 318"/>
+      </g>
+      <g data-term="t_vagus_nerve">
+        <path class="hit" stroke-width="48" d="M158 310C126 322 96 334 64 346"/>
+        <path class="nerve" stroke-width="3.5" d="M158 310C126 322 96 334 64 346"/>
+      </g>
+      <g data-term="t_vagus_nerve">
+        <path class="hit" stroke-width="48" d="M202 310C234 322 264 334 296 346"/>
+        <path class="nerve" stroke-width="3.5" d="M202 310C234 322 264 334 296 346"/>
+      </g>
+      <g data-term="t_accessory_nerve">
+        <path class="hit" stroke-width="48" d="M164 420C156 400 150 384 146 376C124 382 98 390 70 398"/>
+        <path class="nerve" stroke-width="2.5" d="M164 420C156 400 150 384 146 376C124 382 98 390 70 398"/>
+      </g>
+      <g data-term="t_accessory_nerve">
+        <path class="hit" stroke-width="48" d="M196 420C204 400 210 384 214 376C236 382 262 390 290 398"/>
+        <path class="nerve" stroke-width="2.5" d="M196 420C204 400 210 384 214 376C236 382 262 390 290 398"/>
+      </g>
+      <g data-term="t_hypoglossal_nerve">
+        <path class="hit" stroke-width="48" d="M170 326C150 336 126 350 104 360"/>
+        <path class="nerve" stroke-width="3" d="M170 326C150 336 126 350 104 360"/>
+      </g>
+      <g data-term="t_hypoglossal_nerve">
+        <path class="hit" stroke-width="48" d="M190 326C210 336 234 350 256 360"/>
+        <path class="nerve" stroke-width="3" d="M190 326C210 336 234 350 256 360"/>
+      </g>
+  </g>
+
+  <!-- перекрёст поверх начала нервов: иначе по нему не попасть -->
+  <g data-term="t_optic_chiasm">
+    <circle class="hit hit-area" cx="180" cy="157" r="24"/>
+    <path class="nerve" stroke-width="10" d="M168 157H192"/>
+  </g>
+</svg>

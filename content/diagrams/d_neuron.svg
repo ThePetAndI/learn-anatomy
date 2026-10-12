@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" data-diagram="d_neuron">
+  <title>Нейрон (схема)</title>
+  <!--
+    Двигательный нейрон, импульс идёт слева направо. Слева — ветвистые
+    дендриты, тело с ядром, от тела — один аксон. Аксон окутан муфтами миелина
+    с перехватами между ними; без миелина — только начальный участок у тела
+    и конечные веточки. Веточки кончаются утолщениями на мышечном волокне
+    (справа, без подписи) — это синапсы.
+    Миелиновая оболочка вложена в нейрон: «найди нейрон» засчитывает и её —
+    на рисунке она неотделима от аксона, хотя её образуют клетки-спутники.
+  -->
+  <!-- мышечное волокно — клетка, на которой кончается аксон -->
+  <rect class="muscle" x="332" y="84" width="22" height="112" rx="8"/>
+
+  <g data-term="t_neuron">
+    <g data-term="t_dendrite">
+      <path class="hit" stroke-width="48" d="M70 128C52 116 40 100 30 84M52 116C44 112 34 112 20 114M70 154C54 166 42 182 34 200M50 170C40 172 30 178 18 184M84 114C82 96 78 80 70 64M80 92C88 82 98 76 110 72M86 168C84 188 80 204 70 218"/>
+      <path class="nerve" stroke-width="3" d="M70 128C52 116 40 100 30 84M52 116C44 112 34 112 20 114M70 154C54 166 42 182 34 200M50 170C40 172 30 178 18 184M84 114C82 96 78 80 70 64M80 92C88 82 98 76 110 72M86 168C84 188 80 204 70 218"/>
+    </g>
+    <g data-term="t_axon">
+      <path class="hit" stroke-width="48" d="M120 140H166M268 140H306"/>
+      <path class="nerve" stroke-width="4" d="M116 140H306C314 140 318 128 324 116M306 140H326M306 140C314 140 318 152 324 164"/>
+    </g>
+    <g data-term="t_myelin_sheath">
+      <rect class="hit hit-area" x="166" y="116" width="102" height="48"/>
+      <rect class="myelin" x="166" y="130" width="30" height="20" rx="10"/>
+      <rect class="myelin" x="202" y="130" width="30" height="20" rx="10"/>
+      <rect class="myelin" x="238" y="130" width="30" height="20" rx="10"/>
+    </g>
+    <g data-term="t_cell_body" data-hit="area">
+      <path class="soma" d="M90 110C108 110 120 124 120 140C120 156 108 170 90 170C74 170 62 158 62 142C62 126 72 110 90 110Z"/>
+      <circle class="grey" cx="90" cy="140" r="9"/>
+    </g>
+  </g>
+
+  <g data-term="t_synapse">
+    <rect class="hit hit-area" x="310" y="96" width="48" height="88"/>
+    <circle class="soma" cx="326" cy="114" r="5"/>
+    <circle class="soma" cx="329" cy="140" r="5"/>
+    <circle class="soma" cx="326" cy="166" r="5"/>
+  </g>
+</svg>

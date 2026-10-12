@@ -21,8 +21,8 @@
 
   <!-- тройничный нерв: корешок и узел в глубине, три ветви, их конечные нервы -->
   <g data-term="t_trigeminal_nerve">
-    <path class="hit" stroke-width="48" d="M150 194C166 194 180 192 194 190"/>
-    <path class="nerve behind" stroke-width="9" d="M150 194C166 194 180 192 194 190M192 176C204 182 206 198 194 206"/>
+    <path class="hit" stroke-width="48" d="M150 194C162 194 172 193 182 192"/>
+    <path class="nerve behind" stroke-width="9" d="M150 194C166 194 180 192 192 191"/>
     <g data-term="t_ophthalmic_nerve">
       <path class="hit" stroke-width="48" d="M198 182C216 170 236 158 258 146"/>
       <path class="nerve behind" stroke-width="5" d="M198 182C216 170 236 158 258 146"/>
@@ -51,6 +51,11 @@
           <path class="nerve" stroke-width="3" d="M280 318C290 312 300 304 310 296M280 318C292 318 304 318 314 318"/>
         </g>
       </g>
+    </g>
+    <!-- узел — полумесяц в глубине, от его выпуклого края отходят три ветви -->
+    <g data-term="t_trigeminal_ganglion">
+      <circle class="hit hit-area" cx="196" cy="192" r="24"/>
+      <path class="grey behind" d="M190 174C202 176 208 186 207 194C206 202 200 208 190 210C194 200 194 184 190 174Z"/>
     </g>
   </g>
 

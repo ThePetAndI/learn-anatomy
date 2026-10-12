@@ -61,4 +61,10 @@
       <path class="nerve" stroke-width="3.5" d="M190 258C196 300 200 340 204 390"/>
     </g>
   </g>
+
+  <!-- место выхода нерва из черепа: позади околоушной железы, ниже уха -->
+  <g data-term="t_stylomastoid_foramen">
+    <circle class="hit hit-area" cx="148" cy="252" r="24"/>
+    <circle class="outline" cx="148" cy="252" r="5"/>
+  </g>
 </svg>

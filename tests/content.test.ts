@@ -96,6 +96,37 @@ describe('курс собирается урок за уроком', () => {
   }
 });
 
+describe('любой урок можно начать с нуля', () => {
+  /*
+   * Открыт любой урок. Человек мог открыть урок-повторение в конце раздела,
+   * ничего до этого не пройдя: ни одно задание не должно спросить термин,
+   * который ещё не был показан карточкой.
+   */
+  for (const lesson of lessons) {
+    it(lesson.id, () => {
+      const seen = new Set<string>();
+      const list = buildLesson({
+        lesson,
+        getTerm,
+        getRule,
+        getDiagram,
+        getPath,
+        allTerms: allTerms(),
+        relationTasks: lesson.relations,
+        earlier: termsBefore(lesson),
+        seen: () => false,
+        pickReview: () => [],
+        seed: lesson.id + ':alone',
+      });
+      expect(taskCount(list)).toBeGreaterThanOrEqual(MIN_TASKS);
+      for (const ex of list) {
+        if (ex.kind === 'term_card') seen.add(ex.termId);
+        else if (ex.kind !== 'rule_card') for (const id of ex.termIds) expect(seen.has(id), id).toBe(true);
+      }
+    });
+  }
+});
+
 describe('любой раздел можно начать с нуля', () => {
   /*
    * Человек открыл раздел, не пройдя прошлых: ничего ещё не видел. Урок всё

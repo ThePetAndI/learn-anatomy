@@ -214,6 +214,207 @@
       "source": "TA2; Сапин, т. 2",
       "verified": true,
       "note": ""
+    },
+    {
+      "id": "p_neuron_signal",
+      "title": "Импульс через нейрон",
+      "steps": [
+        "t_dendrite",
+        "t_cell_body",
+        "t_axon",
+        "t_synapse"
+      ],
+      "source": "Gray's Anatomy",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_reflex_arc",
+      "title": "Рефлекс: рука отдёргивается от горячего",
+      "steps": [
+        "t_receptor",
+        "t_sensory_neuron",
+        "t_interneuron",
+        "t_motor_neuron",
+        "t_effector"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_motor_path",
+      "title": "Команда мышцам: от коры вниз",
+      "steps": [
+        "t_precentral_gyrus",
+        "t_internal_capsule",
+        "t_midbrain",
+        "t_pons",
+        "t_medulla_oblongata",
+        "t_spinal_cord"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": "Пирамидный путь: волокна проходят средний мозг, мост и продолговатый мозг без переключения."
+    },
+    {
+      "id": "p_touch_path",
+      "title": "Прикосновение: снизу к коре",
+      "steps": [
+        "t_spinal_cord",
+        "t_medulla_oblongata",
+        "t_pons",
+        "t_midbrain",
+        "t_thalamus",
+        "t_internal_capsule",
+        "t_postcentral_gyrus"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": "Путь тонкого и клиновидного пучков: переключение в продолговатом мозге и в таламусе."
+    },
+    {
+      "id": "p_sensory_in",
+      "title": "Чувствительность: от кожи в спинной мозг",
+      "steps": [
+        "t_receptor",
+        "t_spinal_nerve",
+        "t_spinal_ganglion",
+        "t_posterior_root",
+        "t_posterior_horn"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": "Тело чувствительного нейрона — в спинномозговом узле; его центральный отросток идёт в составе заднего корешка."
+    },
+    {
+      "id": "p_motor_out",
+      "title": "Команда из спинного мозга к мышце",
+      "steps": [
+        "t_anterior_horn",
+        "t_anterior_root",
+        "t_spinal_nerve",
+        "t_effector"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_abduct_eye",
+      "title": "Команда отвести глаз кнаружи",
+      "steps": [
+        "t_pons",
+        "t_abducent_nerve",
+        "t_lateral_rectus"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": "Ядро отводящего нерва — в мосту."
+    },
+    {
+      "id": "p_tongue_out",
+      "title": "Команда высунуть язык",
+      "steps": [
+        "t_medulla_oblongata",
+        "t_hypoglossal_nerve",
+        "t_tongue"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": "Ядро подъязычного нерва — в продолговатом мозге."
+    },
+    {
+      "id": "p_biceps",
+      "title": "Команда согнуть локоть",
+      "steps": [
+        "t_anterior_horn",
+        "t_anterior_root",
+        "t_spinal_nerve",
+        "t_anterior_ramus",
+        "t_brachial_plexus",
+        "t_musculocutaneous_nerve",
+        "t_biceps_brachii"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_breath",
+      "title": "Команда вдохнуть",
+      "steps": [
+        "t_anterior_ramus",
+        "t_cervical_plexus",
+        "t_phrenic_nerve",
+        "t_diaphragm"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_calf",
+      "title": "Команда встать на носки",
+      "steps": [
+        "t_sacral_plexus",
+        "t_sciatic_nerve",
+        "t_tibial_nerve",
+        "t_gastrocnemius"
+      ],
+      "source": "Сапин, т. 2",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_to_trunk",
+      "title": "Симпатический сигнал: из спинного мозга в ствол",
+      "steps": [
+        "t_lateral_horn",
+        "t_anterior_root",
+        "t_spinal_nerve",
+        "t_white_ramus_communicans",
+        "t_sympathetic_trunk"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_to_skin",
+      "title": "Из ствола обратно в нерв — к сосудам и потовым железам",
+      "steps": [
+        "t_sympathetic_trunk",
+        "t_grey_ramus_communicans",
+        "t_spinal_nerve"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": ""
+    },
+    {
+      "id": "p_to_gut",
+      "title": "Симпатический сигнал к органам живота",
+      "steps": [
+        "t_sympathetic_trunk",
+        "t_greater_splanchnic_nerve",
+        "t_celiac_ganglion"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": "Волокна проходят узел ствола без переключения; переключаются в чревном узле."
+    },
+    {
+      "id": "p_pupil",
+      "title": "Парасимпатический сигнал к зрачку",
+      "steps": [
+        "t_midbrain",
+        "t_oculomotor_nerve",
+        "t_ciliary_ganglion"
+      ],
+      "source": "Сапин, т. 2; Gray's Anatomy",
+      "verified": true,
+      "note": "Парасимпатическое ядро глазодвигательного нерва — в среднем мозге."
     }
   ]
 }

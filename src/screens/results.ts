@@ -5,10 +5,8 @@
 
 import { h } from '../core/dom';
 import { pop, type ScreenView } from '../core/router';
-import { getState } from '../core/store';
 import { plural } from '../core/time';
 import { findTerm, lessons, sections, type FlatLesson } from '../data/content';
-import { isOpen } from '../domain/progress';
 import type { SessionResult } from '../lesson/engine';
 import { button } from '../ui/button';
 import { kindTag } from '../ui/kind';
@@ -23,7 +21,6 @@ export function createResultsScreen(
   // следующий — только в этом же разделе: разделы независимы, и в конце раздела
   // естественнее вернуться к курсу или повторить раздел, чем попасть в соседний
   const next = lessons.find((l) => l.sectionId === lesson.sectionId && l.order === lesson.order + 1);
-  const nextOpen = next !== undefined && isOpen(getState(), next, lessons);
   const section = sections.find((sec) => sec.id === lesson.sectionId);
 
   const missed = result.missedTermIds
@@ -38,7 +35,7 @@ export function createResultsScreen(
   const actions = h(
     'div',
     { class: 'results__actions' },
-    next && nextOpen
+    next
       ? button({
           label: 'Следующий урок',
           wide: true,
@@ -49,7 +46,7 @@ export function createResultsScreen(
       : null,
     button({
       label: 'К курсу',
-      kind: next && nextOpen ? 'secondary' : 'primary',
+      kind: next ? 'secondary' : 'primary',
       wide: true,
       onTap: () => pop(),
     }),
